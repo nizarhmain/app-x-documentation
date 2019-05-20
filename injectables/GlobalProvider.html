@@ -1,0 +1,1732 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>My app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">My app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li>GlobalProvider</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/services/global-provider.ts</code>
+        </p>
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_appBuild">_appBuild</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_appTitle">_appTitle</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_appVersion">_appVersion</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_codiceAzienda">_codiceAzienda</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_dbName">_dbName</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_log">_log</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_maxNote">_maxNote</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_settings">_settings</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#alertCtrl">alertCtrl</a>
+                            </li>
+                            <li>
+                                <a href="#dispHigh">dispHigh</a>
+                            </li>
+                            <li>
+                                <a href="#dispLow">dispLow</a>
+                            </li>
+                            <li>
+                                <a href="#dispMed">dispMed</a>
+                            </li>
+                            <li>
+                                <a href="#giorgiomareLogo">giorgiomareLogo</a>
+                            </li>
+                            <li>
+                                <a href="#noimage64">noimage64</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#ordine">ordine</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#ordineModificato">ordineModificato</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#platform">platform</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#appTitle">appTitle</a>
+                            </li>
+                            <li>
+                                <a href="#error">error</a>
+                            </li>
+                            <li>
+                                <a href="#getAppBuild">getAppBuild</a>
+                            </li>
+                            <li>
+                                <a href="#getAppVersion">getAppVersion</a>
+                            </li>
+                            <li>
+                                <a href="#getCodiceAzienda">getCodiceAzienda</a>
+                            </li>
+                            <li>
+                                <a href="#getDBName">getDBName</a>
+                            </li>
+                            <li>
+                                <a href="#getLog">getLog</a>
+                            </li>
+                            <li>
+                                <a href="#getMaxNote">getMaxNote</a>
+                            </li>
+                            <li>
+                                <a href="#getPlatform">getPlatform</a>
+                            </li>
+                            <li>
+                                <a href="#getSettings">getSettings</a>
+                            </li>
+                            <li>
+                                <a href="#getTimeout">getTimeout</a>
+                            </li>
+                            <li>
+                                <a href="#log">log</a>
+                            </li>
+                            <li>
+                                <a href="#setAppBuild">setAppBuild</a>
+                            </li>
+                            <li>
+                                <a href="#setAppVersion">setAppVersion</a>
+                            </li>
+                            <li>
+                                <a href="#setSettings">setSettings</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(platform: Platform, alertCtrl: AlertController)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/services/global-provider.ts:23</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>platform</td>
+                                                  
+                                                        <td>
+                                                                    <code>Platform</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>alertCtrl</td>
+                                                  
+                                                        <td>
+                                                                    <code>AlertController</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="appTitle"></a>
+                    <span class="name">
+                        <b>
+                            appTitle
+                        </b>
+                        <a href="#appTitle"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>appTitle()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="93"
+                            class="link-to-prism">src/app/services/global-provider.ts:93</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="error"></a>
+                    <span class="name">
+                        <b>
+                            error
+                        </b>
+                        <a href="#error"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>error(str: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank">String</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="84"
+                            class="link-to-prism">src/app/services/global-provider.ts:84</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>str</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank" >String</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAppBuild"></a>
+                    <span class="name">
+                        <b>
+                            getAppBuild
+                        </b>
+                        <a href="#getAppBuild"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getAppBuild()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="42"
+                            class="link-to-prism">src/app/services/global-provider.ts:42</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAppVersion"></a>
+                    <span class="name">
+                        <b>
+                            getAppVersion
+                        </b>
+                        <a href="#getAppVersion"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getAppVersion()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="34"
+                            class="link-to-prism">src/app/services/global-provider.ts:34</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getCodiceAzienda"></a>
+                    <span class="name">
+                        <b>
+                            getCodiceAzienda
+                        </b>
+                        <a href="#getCodiceAzienda"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getCodiceAzienda()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="66"
+                            class="link-to-prism">src/app/services/global-provider.ts:66</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getDBName"></a>
+                    <span class="name">
+                        <b>
+                            getDBName
+                        </b>
+                        <a href="#getDBName"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getDBName()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="30"
+                            class="link-to-prism">src/app/services/global-provider.ts:30</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getLog"></a>
+                    <span class="name">
+                        <b>
+                            getLog
+                        </b>
+                        <a href="#getLog"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getLog()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="89"
+                            class="link-to-prism">src/app/services/global-provider.ts:89</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>{}</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getMaxNote"></a>
+                    <span class="name">
+                        <b>
+                            getMaxNote
+                        </b>
+                        <a href="#getMaxNote"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getMaxNote()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="58"
+                            class="link-to-prism">src/app/services/global-provider.ts:58</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getPlatform"></a>
+                    <span class="name">
+                        <b>
+                            getPlatform
+                        </b>
+                        <a href="#getPlatform"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getPlatform()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="50"
+                            class="link-to-prism">src/app/services/global-provider.ts:50</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getSettings"></a>
+                    <span class="name">
+                        <b>
+                            getSettings
+                        </b>
+                        <a href="#getSettings"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getSettings()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="62"
+                            class="link-to-prism">src/app/services/global-provider.ts:62</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/Settings.html" target="_self" >Settings</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getTimeout"></a>
+                    <span class="name">
+                        <b>
+                            getTimeout
+                        </b>
+                        <a href="#getTimeout"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getTimeout()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="75"
+                            class="link-to-prism">src/app/services/global-provider.ts:75</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="log"></a>
+                    <span class="name">
+                        <b>
+                            log
+                        </b>
+                        <a href="#log"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>log(str: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank">String</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="79"
+                            class="link-to-prism">src/app/services/global-provider.ts:79</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>str</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank" >String</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setAppBuild"></a>
+                    <span class="name">
+                        <b>
+                            setAppBuild
+                        </b>
+                        <a href="#setAppBuild"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setAppBuild(value: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="46"
+                            class="link-to-prism">src/app/services/global-provider.ts:46</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>value</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setAppVersion"></a>
+                    <span class="name">
+                        <b>
+                            setAppVersion
+                        </b>
+                        <a href="#setAppVersion"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setAppVersion(value: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="38"
+                            class="link-to-prism">src/app/services/global-provider.ts:38</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>value</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setSettings"></a>
+                    <span class="name">
+                        <b>
+                            setSettings
+                        </b>
+                        <a href="#setSettings"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setSettings(settings: <a href="../classes/Settings.html">Settings</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="70"
+                            class="link-to-prism">src/app/services/global-provider.ts:70</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>settings</td>
+                                    <td>
+                                                <code><a href="../classes/Settings.html" target="_self" >Settings</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_appBuild"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _appBuild</b>
+                            <a href="#_appBuild"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;1&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/services/global-provider.ts:14</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_appTitle"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _appTitle</b>
+                            <a href="#_appTitle"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&quot;Campomaggio&quot;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/services/global-provider.ts:15</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_appVersion"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _appVersion</b>
+                            <a href="#_appVersion"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;0.0.1&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/services/global-provider.ts:13</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_codiceAzienda"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _codiceAzienda</b>
+                            <a href="#_codiceAzienda"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;CAM&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/services/global-provider.ts:17</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_dbName"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _dbName</b>
+                            <a href="#_dbName"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;campomaggio.db&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/services/global-provider.ts:12</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_log"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _log</b>
+                            <a href="#_log"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/services/global-provider.ts:20</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_maxNote"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _maxNote</b>
+                            <a href="#_maxNote"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>120</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/services/global-provider.ts:18</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_settings"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _settings</b>
+                            <a href="#_settings"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/Settings.html" target="_self" >Settings</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/services/global-provider.ts:16</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="alertCtrl"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            alertCtrl</b>
+                            <a href="#alertCtrl"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>AlertController</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/services/global-provider.ts:26</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="dispHigh"></a>
+                        <span class="name">
+                            <b>
+                            dispHigh</b>
+                            <a href="#dispHigh"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAADICAYAAAAePETBAAAACXBIWXMAABcSAAAXEgFnn9JSAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAOsSURBVHja7N2/jxRlHIDxZ2Z2b5HbEyEKeMkRuFAYC3oSCysttKehAjutLYyFjaUVCQ0/ChtiY0KhhfFPwKAhamEwJngQIOBy5+3N7rvzvhZecQW3cwszlws8T7K5Zm+L7ye739kt5s1SSmxXlmXngDPACtZES8C1lNLV7Z7QqXmBd4D3nGOj3QG2Bcmdz95KkD1WZ5Yn9/YXvLk8T6wSU1aPbdbt5Ty+VzJ4MGoHZOmtBb747jTrTwJVUKSuxZN9vv78N7796o92QGJMhDISykg1EaSucVlRTWJ7H1kpQRhHJmNBdlIYRWI125xc6l5lmSCCmCCCmCCCmCCCmCAmiCAmiCAmiCAmiCAmiAkiiAkiiAkiiAkiiAligghigghigghigghigpgggpgggpgggpgggpggJoggJoggJsiL2Ew3wZzr5Rxdnmf9n8AkRKdX0+KRPv3X5toDGTwc8cOVvxgNq5nvtvkydvDoPm7/PJjtn1JK2z74/6bxyUejj6vTZu4Ocanb8+yQh5t//3RUjbS8ZaZPLas5YccRttC0mde9Q84AHwL3HWMzV8LAdeCbZwV5HzjrHButnAbiUvcqyxr7pr50qMMn7/bZCInKX05qO7xQcP2XIT/+XrYDcvxIh08/fgP+jeCBLvUdm6O88KA9kGqcYCVQrUeCv2XVtg8Iq7N9lLhDXOomiCAmiCAmiCAmiCAmiAkiiAkiiAkiiAkiiAligghigghigghigghigpgggpgggpgggpgggpggJoggJoggJoggJoggJogJIogJIogJ8iI2000w8wwoMorCe8LvbLoZRd4iSFZk8GoOBRTeJra+AwV5L2sP5NadMR98dpdQJZIetfV7Gb/eDe2BDIaR729tOGmXuiC2R6+yLgE/AU8cVSMdBG5MvXDyyKPd73mOPLoMnAcqx9hIBXAF+OhZQfItL2S7sLdd6l5lWWNfDE91e1x7fZHVGJngV/W6ljtdvlx9xMW1QTsgB/KCt1+Zh1jhbyc7qNvjxHCtvXdIIEIVWIuRIEhth/KcYfTII5e6CSKICSKICWKCCGKCCGKCCGKCCGKCmCCCmCCCmCCCmCCCmCAmiCAmiCAmiCAmiCAmiAkiiAkiiAkiiAkiiAligghigghigghigghiglhntifnUHRZyLwr6Y4quuzP8/ZA1lPk79EGgxSZCFLbyRhZqVo8YefmuGRp5baTdocIYnt0qZebf9ccVSMtbJnpU5t6wo7tfv8NAIaMZvU5Afd2AAAAAElFTkSuQmCC&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="97" class="link-to-prism">src/app/services/global-provider.ts:97</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="dispLow"></a>
+                        <span class="name">
+                            <b>
+                            dispLow</b>
+                            <a href="#dispLow"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAADICAYAAAAePETBAAAACXBIWXMAABcSAAAXEgFnn9JSAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAL0SURBVHja7N0/jwxxHMfxz87uRg4X8ae6uIKoLngCaGlEotKo8BA8BZVEotH404rSc1ASEjWJP1cgEuzh2LsZhSuucDvmzLgVr3ezzcwW31dmfrNbzK9XVVU2qtfrXUhyLsli1EbzSe5WVXVnowMGNV9wPMlJc2y1V0k2BCnMZ7oCMmUNGh6/lOTp2nk946vta5IDSfZ3BfIkyQlzbtTlJFfdsqanRncSIBZ1AQEiIEAEBIiAABEQAQEiIEAEBIiAABEQAQEiIEAEBIiAABEQAQEiIEAEBIiAABEQAQEiIEAEBIiAABEQAQEiIEAEBIimDqQyssY1mlnT9/buTXIsyewmzv0fe5FkoUuQhSQPzNkaAkRbU90t693a53OjaqWD62b6y3o1O+wYYRePXRNmXneFnEtyOskbY2yluST3k9zbLMipJOfNsdWWJ4FY1D1lqc0fhi+TXE8yk6RvfLW9TXI2DXa6awryIsk1c27UziYgTW9ZnoObZ8sji7qAABEQIAIiIEAEBIiAABEQIAIiIEAEBIiAABEQIAIiIEAEBIiAABEQIAIiIEAEBIiAABEQIAIiIEAEBIiAABEQIAICxAj+bRBbHjWv0y2PDufny+SHrq7fainJkS5Bdic5Y87WECDamupuWTeTPEry0ahaaXeSh5MOsOXRVjx2/cGWR7eSXEyyaoyt1E9yO8mlzYIU675If2Hdtqh7ylJrPwyPDrfl7r65fCrLrPgXpbaDg2GufHqfG6MP3YDsKvpZmNmRlKtJBaS24bYc+DLq7goZp0xWxxmVZcZAattTFPlSltYQi7qAABEQIAIiIEAEBIiAABEQIAIiIEAEBIiAABEQIAIiIEAEBIiAABEQIAIiIEAEBIiAABEQIAIiIEAEBIiAABEQIALy3zdodnCR9IeZ7Xkr6W/VH2Z7UXQH8rkq8/rb13yoyqwAqe1QWWZxddwdyOPvy5lffGbS1hAgmtJFfXntc2RUrTS7bqa/bOIOO/r7/RgAGcp2OMoNcCAAAAAASUVORK5CYII&#x3D;&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="101" class="link-to-prism">src/app/services/global-provider.ts:101</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="dispMed"></a>
+                        <span class="name">
+                            <b>
+                            dispMed</b>
+                            <a href="#dispMed"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAADICAYAAAAePETBAAAACXBIWXMAABcSAAAXEgFnn9JSAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAANFSURBVHja7N29b9x0HMfxj+07wkNDRXmSKoJoxZSBfwCQmGCAvQsTsMGIGNiZGJFYeFgrxi5MjIwgQBFiAgmVVAKEFJI2OeLYZsmQoYnjYIcTvN7LLb4bvi+df7+7wb+i67ocV1EUryW5lmQzGqO1JNe7rvv0uAtmPR/wXJIXzXHUbiY5FqQ0n+UKyJI1G3j97SQbh+8rjK+3vSRXkjwxFci3SZ4350G9neR9t6zladCdBIhFXUCACAgQAQEiIEAERECACAgQAQEiIEAERECACAgQAQEiIEAERECACAgQAQEiIEAERECACAgQAQEiIEAERECACAgQAQGipQPpjGxwg2Y29Lm9Dyd5NsnqGd77f+znJOtTgqwn+dKcrSFA9O/Ud8v6/fD1J6MapatHZnrXip4Tdoxwim3XCTPv+4ZcS/JKkl+NcZQuJ7mR5LOzgryU5FVzHLXFSSAWdbssjfbDcO3SLG+9cCF7dZemNby+HlutcuO73Xzxw2IakKcen+WdNx9NbrfJgb+1envyniw++G06kGa/SzbrNHfa1A2Qvu5NUm8Pu5VYQyzqAgJEQIAICBABASIgAgJEQIAICBABASIgAgJEQIAICBABASIgAgJEQIAICBABASIgAgJEQIAICBABASIgAgJEQIAIyH+xQQ/BLIskVZGq8kz40023SFVOCFJURfJgmVRJ5TGx/V2sUq4U04Fs3NzPy+/eSt106Xj0dmGlyPe36ulAtnbbfL6xZ9IWdSBa0l3WR0m+TvKnUY3SQ0m+OnHj5Mij8++fHHn0cZLXkzTGOEpVkk+SvHFWkPLIB+kc1m2Lul2WRvth+Mx8JdcfuZztts2Bg6N7uzqb573tP/LhztY0IBfLKuv3PZC0Tfx3cormK7myuzPdN6ROmzR1dto2NZDeLpVldltHHlnUBQSIgAAREAEBIiBABASIgAAREAEBIiBABASIgAAREAEBIiBABASIgAAREAEBIiBABASIgAAREAEBIiBABASIgAAREM2GXVwm1TyrhaeSnqpqnvvLcjqQO12bX/7ay1bX5gBIb0+3bTabCU/Y+WZ/kbXNH03aGgJES7qoLw5fd4xqlFaPzPSunXjCjs6/vwcAqxWj08BGf3sAAAAASUVORK5CYII&#x3D;&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="99" class="link-to-prism">src/app/services/global-provider.ts:99</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="giorgiomareLogo"></a>
+                        <span class="name">
+                            <b>
+                            giorgiomareLogo</b>
+                            <a href="#giorgiomareLogo"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;data:image/png;base64,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&#x3D;&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="105" class="link-to-prism">src/app/services/global-provider.ts:105</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="noimage64"></a>
+                        <span class="name">
+                            <b>
+                            noimage64</b>
+                            <a href="#noimage64"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAMgCAIAAABUEpE/AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAADoASURBVHja7N1vUxrbmjdgIkFU0qh9dJud6M6e1DmTqqmpOjXf/yvMmzM1b1JndirumD8GNioEBVvwedHPZhigW/7b4HW9SoxR6G7oH2vd617PKpVKDgCA+dlwCAAABCwAAAELAEDAAgBAwAIAELAAAAQsAAAELAAAAQsAQMACAEDAAgAQsAAABCwAAAELAAABCwBAwAIAELAAABCwAAAELAAAAQsAAAELAEDAAgAQsAAAELAAAAQsAAABCwBAwAIAQMACABCwAAAELAAABCwAAAELAEDAAgBAwAIAELAAAAQsAAAELAAAAQsAQMACABCwAAAQsAAABCwAAAELAAABCwBAwAIAELAAABCwAAAELAAAAQsAAAELAEDAAgAQsAAABCwAAAQsAAABCwBAwAIAQMACABCwAAAELAAABCwAAAELAEDAAgAQsAAAELAAAAQsAAABCwAAAQsAQMACABCwAAAQsAAABCwAAAELAAABCwBAwAIAELAAAAQsAAAELAAAAQsAQMACAEDAAgAQsAAABCwAAAQsAAABCwBAwAIAQMACABCwAAAELAAAAQsAAAELAEDAAgAQsAAAELAAAAQsAAABCwAAAQsAQMACABCwAAAQsAAABCwAAAELAEDAAgBAwAIAELAAAAQsAAAELAAAAQsAQMACAEDAAgAQsAAABCwAAAELAAABCwBAwAIAELAAABCwAAAELAAAAQsAAAELAEDAAgAQsAAAELAAAAQsAAABCwBAwAIAQMACABCwAAAELAAABCwAAAELAEDAAgBAwAIAELAAAAQsAAAELAAAAQsAQMACABCwAAAQsAAABCwAAAELAAABCwBAwAIAELAAABCwAAAELAAAAQsAAAELAEDAAgAQsAAABCwAAAQsAAABCwBAwAIAQMACABCwAAAELAAABCwAAAELAEDAAgAQsAAAELAAAAQsAAABCwAAAQsAQMACABCwAAAQsAAABCwAAAELAAABCwBAwAIAELAAAAQsAAAELAAAAQsAQMACAEDAAgAQsAAABCwAAAQsAAABCwBAwAIAQMACABCwAAAELAAAAQsAAAELAEDAAgAQsAAAELAAAAQsAAABCwAAAQsAQMACABCwAAAQsAAABCwAAAELAEDAAgBAwAIAELAAAAQsAAAELAAAAQsAQMACAEDAAgAQsAAABCwAAAELAAABCwBAwAIAELAAABCwAAAELAAAAQsAAAELAEDAAgAQsAAAELAAAAQsAAABCwBAwAIAQMACABCwAAAELAAABCwAAAELAEDAAgBAwAIAELAAAAQsAAAELAAAAQsAQMACABCwAAAQsAAABCwAAAELAAABCwBAwAIAELAAABCwAAAELAAAAQsAAAELAEDAAgAQsAAABCwAAAQsAAABCwBAwAIAYGzPHYLH1e12O53O7e1tu93u/3oQBLlcrlAoOERPRBRFuVyu2Wx2u11XAoCAlcUb1YcPH0b+09u3bye9USX9tMPDwzAMp36QzWbz4uKi2WzmcrlGo5H0bfHN9fDwsFwuP3++pJP1/v37kV9PecpJ/2XAu3fvJoqe//znP+f+YwfUarVKpZL0r1NcMBO5u7ur1+vxA0i5DHpXwt7e3u7u7tbW1nxfF3Mxy1nIwlk7Pz+/vLxc0GWQ8gKZ9Lgt9Iqd4rXf+2ww7FE+FSz6FT3762hvb69QKGxsbJRKpekezDIP+Dq9bwhY85F0r/r06dPbt2/n8tMODw+ne2zx+3j63XTgVzcajSAICoXCycnJct6zJn3K4zydIAju7u7Gj4m3t7dj/thZnmmlUkn5Lefn58fHxwv6GPDp06coiia9EuIQcHx8XCqV5vW6WDmLOGthGCa9MGu12tHR0dSPttVqJR38v/71r1m7Yid97UdR9I9//GPkC/NR7p1LeEXP+Drq/+9TvLEv/4CvzfuGgLVYURRdXl7u7e09ym+/vLw8Pz+f7mKN/1cURcuMWXN/lbbb7fEDVrVaXcL1kP4N8RDjfHW73Y8fP44frUZeCWdnZ7nFD7Bl9lW8iLOWciQvLy9nCVjVanXkuQ6C4MWLF9m/YlforrxCx2fgjX1vb2+Wa0wMyqanVeTeaDTOz88f5Vd/+PBh6nTV//hrtdqHDx+S5jIybqKDv4S3wgfPSKPRmO/DaDab//znP2u12uxXQqPR+PDhQ9ZuGMu5ihZ01lI+ej14557iSi4UCpPO+y//inVtLOfGdHl5udCZOASsJV3K8af/JaerqUcskmLiYyXFhX6+7Lm7u1v0g+l2u+O81c7xOJ+fn5+dnc3xg2Z8MT+pG+pCz9pf/vKXkTPO8Qeb6R5wPD840qQjFsu/Yl0by7wxLbraCQFrGZrN5iyfRx83XfV/4lnjjNVutxc94n1zczPOr4iiaC5pb6Lau0kzVspdfM0s9KyljCdNPWb85cuXpPnBSavolnzFujYeJWNNHeURsLJyHS/tg8L46apYLJb/lM/nx8xYqzVXGE9sjfOdFxcXi34wYw5kNhqNP/74Y8bfFZ+pB9cJBkEQhuHbP52cnMRffPARnp6ePu6ZnXGpQXbOWsqo0hSfyrrdbtL/mmKNwjKv2FW0Bsen0WikLIFcP0t733gsT7cPVq1Wm6XPwpi/4sF0VS6X4y4MA6Gq0+nUarWLi4t6vZ7yaozfqVeo0rlSqYxz2Bc97TXRzXLGGucoitJLQ4IgSOrEcXR01O12b25u4ptH0g+Jx7GmXh7197//fSUuoSWctRcvXgRBMHyc43n5SY9w0phKEASTPrZlXrGrKAvH5/j4eGdnJ/17rq+v2+12rVbrdDopn5wfayXWWr5vCFiP8EEhl8vt7e1tbCxqDO/u7i59wfDOzs7x8XG5XB75r/l8/vDw8PDwsF6vn56eDrQh7X8iHz58WK1WIt1uN/2wL2ECd9Iy82azOcWQQ+zDhw9JvyueJ0q/bcf9ct69exfPCCf9qGazOVEXjH6r8i65hLP2/PnzpKMxRehPmcSf9Jgv84pd0Q/Mj358dnZ2kt7P+z9Rx1Hs48ePSeP05+fnKxGwpKsHPd2tchqNxsePHxf38799+5bygj88PHz37t2Dr8b4Bflv//Zv6R+MMlvmPPywG43Gzc3Ng+99w4fuwY+GE5loanWWxacpFRVBEBwfH48/KHJ0dLS3t5c0qP4UJoaWc9ZSxjYmqnVLmR+c4va5tCvWtbEE+Xz+119/LRaLIoiAtbaiKFpQdfDd3V1K6Nnf33/z5s04hVa9V+O7d++SEsajrIsc08jZwAfrq0aGknHC6JhSTnpSQ8WpC2OTRjHjSaJJP0On/5cVbd6RtbO2vb2dtJZwot5sKfODf/nLXzJ7xbo2lpaxpu5WjYC1AhZXHZwyfFUsFn/99dfpPvFM9xbzWIIgePny5fC96sHxtpGf++c4np+0sCuetE26VFKK4ZKMHIrrPZ3pZgFevXo18vYff3GN76lLO2sbGxtzmSVMGSOZdCZ3ac/dtbFM8x2VR8DKokWMFae8Eb98+XL8savx3yy+fPmyQsc8pcpq5D/t7OxMd9CG3d3dJf32MAzz+fz+/v7If51idU/SyGI8OTjlK3Zjo1QqBX86OTn561//+ve///1vf/vbu3fvlrZh5ZIt86ylpNjxP8mkzA9OWl695Ofu2gABaz7iJRvzrapO+WnFYnGWYeH0HcGyeYSHbyfpzZRHtnKY4/zgjx8/kkaV4jfilEWOEw0TpgwmzVjBenx8HMepd+/exYVZ8d6xa/w6XdpZiyVtpz3+LGHK/OCkF/OSn7trY2mSli4pHhew1ipjffr0ab4/MOkFP+Oke8qnscxmrHi4ZeCLKaOGwx8rgyB49erVvDJW0q/e39+Pa0739/dHjpZNWoKT9L4fN7ua9XW78bReuUs7a/3X7civjzlLmPSAp4jCy3/uro3lGFmNOkULDwSsx5cyzRRvAj2vX5Qy8jx7Skj6CeP38FyyuXwam1eeSMmg/Qc2KQA1m81utzt+wFroMXk6lnnWeg4ODqaeJUyatJpv+6vFPXfXxhJ8+/YtqQjsSfXXELDWxMuXL//93/89aX3Qclbtzl7VmPLau76+zuaRH84TjUZj5F1qZF/WObaESWr4mc/n+9+CkwYaJyqMTdnid4XuUhkZoljaWeuZZZYwZdJq0nvnozz3FbKKx+f6+vq3334bWaAZBMGbN2/WIN0Se1qNRguFQny3HtmpeZZe2OOYyyRXSkTLbDeso6Oj4c4LV1dXw/ewkQ0adnd35/VIkg5RXAzbf5CLxeLIConZewBmsIXgP/7xj6n/b9yGfqGbIjzWWdvb2xt5837whZb0aW2KkYksXLFZlqnjc3Z2lr7K5O7uLuVjcBAEe3t7Sck+gzL+vpEFT64GK2WIfi6bQN/d3SV9eJ3XOriVa09XLBaHBw5HzskOfzEIgs3NzXm9FyedmuHsO+N6gpTLYM26Cy56YnqZZ234Jp004J2SsZIWN0wxP/iIz31V0lWmjs/19XU91YPp6ulUX2WzoEXAmoM3b94kvW/OXu1+f3+f9E/zmllfuTt00qe6gVtRUjHEvAqwksYVisXi8NKBpMUEY84mp1wG88qLT8Qyz9qAlMnclJ+WMj846ezwIz5318YyxTODatvXz1Pci3BrayvpnS6KoiVsAv0EPxOUSqWBh9doNH78+NE/OH97e7u4AqyUZjkj33nj9+iRy3yWMxX7/v37Kf7Xmo26P/pZOzo6GvmyiqIoaUvNpLv1pCuIV+6KfWrXxhwdHR2t0MwgAtYDfv3115H11EvYBPppOjg4+Pbt28AXa7Vaf366uroa/o/zKsD6448/kgJoUiIpl8sj347jGaIlrPSZIjGv2eYbj37WXrx4EQTByDeKm5ub4Z+WMj84aQnmKl6xT+ramKPz8/Pz8/OnUJP01DzRGLGxsXF4eJg0UbhaXdFXwubm5vDRHvgAutACrKQ2HDs7O0nrBgbqZPtldvPHNfPoZy2lZnnkSFXK/OCkTfZdsU/n+MRNdiqVyvv37y3NWyfPn+wzD8MwqWFVs9lstVorN2ab1LYnI4l25NejKIqna5M++s9lKDGlcVHKR8Z4pXfSRXJ3dzfdvjSdTidrnRqyeeVk5KxNNEuYND846fLkTF2xro2lxaxcLvfhw4fj4+OVGG7M8h1HwHp8b9++/fDhw8jx/9PT03fv3s33181rpn9FG9sML3pvNBq1Wi0u7Wy324srwEraCzaXXPra+9eRb8eNRuOPP/5IKUpNiVDX19dZy+5zv9RX9KyNVC6Xx5wlTJkf3N7eXsXnnlnZPD6Hh4fpK5Da7Xa73U5v1hA3DPrb3/6W/TKVbL5vCFhZUSgUhouve6ardi8UCiPfjuOhi6d8tMMwHF6keXl5Gb+pjayNmEsBVsq2u73NNFJurkntc3qPPOXjXdLIh/edzJ61YRsbG0lx+fz8/O3bt72/Js0PTro9Tnaeu2tjIvv7+2NW2nU6nUql8vXr15E3hUaj8fHjx/5LCwFrJR0fH49sphJ/Zb5DoHMZeUr5IRkfVU6KnvE8y/Dw3rwKsOr1elKGvri4+M///M+pf/J0hbFrc59bqEydtZGdcnNDs4Qj5wfjnTRX+op1bcxdPp9/+fJluVx+//79yIwVRVGvfAIBa4XFd7uRGeu///u/57ssq16vz9jPPWVsefZ9eJYvnmdJ+tA5l0HyBTW5idvnpHzKTOoD3suU6T8/ffj9/fv3692p77HOWtJHl6RZwnq9Hk9kpwxMTjojnKnn7tpYnJ2dnePj49PT05EPplc+werSjCC3t7eX9EGh0+kMNxd4UEomm30Qa+Qn6d5n5ZXIsgM+fPjw+fPnBRVgLXQ+LoqipLKbXPL8Zpwpve6yedZSMlb6zb5Wq42MvJNexhl87q6NxUm5WSQtk0TAWjEnJydzTCc7OztJP61SqcxSidVut5NGsIIgyP54cjwSMPykFrcFYdJesPP6yJuSmEd2pljoR/C18YhnLcnBwUHS2YxvySNvh0EQTFrHmcHn7tpYqLnsUYuAlV3xJtDzylgpMwJxbePUPzllOG0lZutTRgqH70xzKcBadI/mlLOZUhwdF1h43WXwrE36oo43JEg5m5O+MDP43F0bj+KJ7NYnYD0J853tTqmU/Pr168g1LA+q1+tJL/4p9pHNWsYaGVAy/l4cS2nJ8+rVq6Rmth8+fPCiy+ZZm/RF/T//8z///Oc/R94Op9jdOZvP3bWxOEm3A12mBKy1krQJ9HRxLelHdTqd3377bdKJwuvr699++226SJcpY86YzKUAa6GzCb2oVK1WJx32iGkHn82zNsWLeuTEfRAEL168WI/n7tpYXLqa7vM2K8Eqwv9zO5zXRFuhUEhvNfn+/ft3794l7dsw8vuTMlkQBCu0A13S5m4DZi/AStkL9uTkZIoBv7Ozs5FTtM1mM2VV4PHx8dnZWVIfkPPz80kfyd3d3e+//76ur8GMnLWkF/WkbwITdQbP8nN3bSxIyqcsPRrWgBGs/+OXX36Z1yBWeuH89fX1f/3Xf43srjng27dvKekqtkJbhI5zy5lLAVZSs5wp6o5jSWXO6YWxpVIp6Y2y0WhcXl5++PBhzHqsbrdbq9V+++23pAVrayAjZy3JRAOrk97yM/7cXRvz1el0Tk9PU24BejSsASNYg7f/eDRo9htYoVBI/1HxXGG5XN7f3x/ehbTdbl9cXFQqlfQB5CAIVq6xTUr3/P8N/jN/fEwpVp3uo2HKfN/5+XnKrffk5CSKopFPOf5iFEWlUuno6CjpgbVarWq1OrIj7lxkp6Vhds5a0ieZy8vLcc7CFNvjZPy5P/p1lf3jk9KkcODb4qXTKR+bgyCYoupjyS9krVAFrIml7AY6xY+6vLxMnxGr1+v1ev309LRYLPb6bTabzXGKtOLJwZW7xPf399O7i83+1p8yJjTL58KU3qEp7zWFQiFporAXsxqNRq+AtzfhG0VRvPh/0eNV//jHP2b/IUEQzLg3WabO2ow38lKpNNGHhOw/9+VfV/1X1EocnzlWVU5X9THHA75C7xtZZopwhLdv385rovDt27fxFjEPfme73a7/acx0tbe3t0KTgz3b29vpB2T2AqykYtgp6o4HEnPSnEJ6a6tSqfRgH5DGnz786dOnT/FXxnyfCsNwFa+HzJ61qW/nQRAcHBys33N3bSzH1JOeCFgrIN4Eeo5xbcyMNdErcG9vb0Un6dM/2c9egNXtdpOWc09adzz+AMaDC8iPjo4ODw8XtPQ6vh5WeheUbJ61YfEqjQe/baLtcVblubs2lpOubPMsYK254+PjOd4L3759O7KJ+dSvwMPDw5UugUyfBJyxAOvm5iZp1Gf2g5b0E/rn+FI+Ls+xFUj/h923b9+ueklsZs/agOfPnz84czTpHPeqPHfXxhLS1fHxscImAWv9pbS9mS6xzX5z7d1NV30AOWUScPYCrKRKiCnqjoeVy+WkkzhOBcbW1ta7d+9evnw5+6XVuxjiIdJVf7ll+axNdFOfYn5nhZ67a2Nx0Soeu1qVjoaM9XnMIUi506fsrDyF+OZaq9XiIvqJKpfjt4Dj4+P1ePltbW0l1f7PWICVUgw7ad3x6E8kyRvg5HK5u7u7cSYsjo+P7+7uvn37NsXCwPhKSF91uHJW4qz1xEWEKSduovOyWs/dtbGIaLVO7+2sf8CaYy+rue8ZF1ci9xbepyet+InExezLvJtOegCnO+Aj/1dKAdY4vyXOxCO/c9K645QBjKSr4o8//hhzzuL58+fHx8fdbvfm5ub8/Dz+geNcCbu7uxPV9yzidTF3q3LW+m/JSQdz0kmrrD33KS6ShV5XGbw2Zny+pVJpZ2en96Py+fykMXHJL2Sb9kzt2arv/bnqut1up9PpdDoDPVTia9pk/FO7Em5vbwc6n7kSAAQsAAAUuQMACFgAAAIWAICABQCAgAUAIGABAAhYAAAIWAAAAhYAgIAFAICABQAgYAEACFgAAAIWAAACFgCAgAUAIGABACBgAQAIWAAAAhYAAAIWAICABQAgYAEAIGABAAhYAAACFgCAgAUAgIAFACBgAQAIWAAACFgAAAIWAICABQCAgAUAIGABAAhYAAAIWAAAAhYAgIAFACBgAQAgYAEACFgAAAIWAAACFgCAgAUAIGABACBgAQAIWAAAAhYAAAIWAICABQAgYAEACFgAAMziuUMALF+n0+l2uzc3N/Ff7+7u2u32wPeUSqWBP+fzeYcOELAAcrlcLoqim5ubZrN5e3vb6XTirzQajYl+SBAEhUIh/nM+n9/c3OwFr83NzUKhsLGx8ezZM0cbELCAtdVqtRqNxvX1dafTmSJODXvwJ4RhmMvlNjY2isXixsbG9vZ2HLyMewECFrDyuerq6qrZbM4lVE2kVqulp67Y1taWyAUIWMBqqNfrtVqt2+2ODDqPZfjBxJFrc3Nza2tre3tb3gIELCCLoij6/Plzu91e8pDVXCJXL2/t7Oz0l3kBCFjAo6lUKo1GI1OjVlPnrThgCVuAgAU8pq9fv9br9ZUYuBpH/xOJA9b29na5XO5vGAEgYAHzF1evt9vtuIvV2qSrpLBVr9d7w1r7+/s6QQACFjAf9/f3FxcX19fXt7e3y18emJGklcvlwjDc3Nzc3983pgUIWMD06vX6xcVFp9NZ3SqrOYoPQrPZLBQKpVIpDEN1WsBIzyqViqMAjAwTl5eXT228aiJhGObz+f39/XK57GgAAhaQZrXaLjy6IAiKxWKpVDo8PHQ0AAELGKFarcYtQx2KSWNWoVAol8sHBweOBqAGC5Cu5iAe7Yui6MePH2EYmjQEAQsgl8vlms2mdDV7zGo0Gt1u9+Li4vj42CY8IGABT12lUpGu5iI+jJ1O5+DgwFAWCFjAk05X7XbbcZh7zGo2mz///LOjAU/NhkMA5P6c23Ic5p6x6vX62dmZQwECFvDkNJvNKIochwUl12azab02CFjAk3NxcWH4aqEZq9FodDodhwIELOAJub29dRAWqlarXV1dOQ4gYAFPRavVMj+4BNYQgIAFPCFXV1fmB5fg+XOrtkHAAp6MZrMZhqHjsFBhGAZB4DjAE/pM5RDAE/f27dtOp6PF6OIEQbC5ubm1teVQgIAFrJveKrZms9n/9VKp5OAsLloVCoUgCA4PDx0NELCA1XZ/f99ut6+vr9vt9u3tbRytoihSa7VMYRiWSqWjoyOHAgQsYIW1Wq2rq6ubm5tut2vK79HTlYErELCA1VapVJrNZrvdNkaVkXRVLpcPDg4cChCwgJVUr9er1arpP+kKELCA+Wi1WtVq1Wxgpmxvb0tXgD5YsMK2trY0Yc8aHdsBAQtW2NevX9+/f+84ZDBgff361XGAJ84UIawwdVfZPCmFQqHT6eTzeUcDniwjWABzVqvVvn//7jiAgAXAPN3c3DgIIGABq6dYLDoImRVFUaVScRxAwAJWzPPnaiizq9FoDOz5CAhYAMyq2+22Wi3HAQQsYGV0Oh0DJBlXq9Wurq4cB3iaTDHAyri/v7++vv7x44ftnFeFUncQsICMarVacUGPULVyut1uFEWFQsGhAAELeHxRFF1eXl5fX3c6HRs5r65arba3txeGoUMBAhbwaKGq0WhcX1/f3t4KVWvj+vpawAIBC1i2Vqt1dXUVV6ybAVw/t7e3DgIIWMCSRFFUq9WazabBqrU/0fYlBAELWLh6vX5xcdHpdIxXPQXxAoVyuexQgIAFLESlUmk0GoasnhoBCwQsYCHq9XqtVmu326IVgIAFzCqKoi9fvsS9rByNp+nm5ub09HRnZycIgq2tLQcEBCxgJvGcoFqrJ653AQRBUCgUNjc347ClASkIWMDEzs7Oms2mgSt6+i+GuDlWqVR68eJFqVRycGDNPKtUKo4CzNf9/f3p6amKK8YRD2Xl8/kgCHZ3dzV0AAELSExX1WrVoWBSYRhubGy8ePFid3fXBCIIWMD/Ojs7+/btm+PALOJhrVKptLu7qy4eVpEaLJinuDm748CM4snlWq12eXkpaYGABU9ap9O5vLxUd8XsBtYYNpvNOLhLWiBgwZPz/ft3HRmYTryocHt7u1gs7uzsxGXvSTne5oYgYMETcnNz4yAwaa6K1w+O3xZLtAIBC56QZrMZRZHjwDjiOBUEQRywHBAQsIDRdL1iHHGi2t/ft/0zCFjAWAHLQSBFvBHh0dGREnUQsIBxbWxsOAgkRatisRiGoVErELCAyWxvbzsIDAvDsFQqHR0dTfS/Op1Os9m8vb2NoqjT6dze3vb+KZ/Pb25uPn/+vFgslkolJVwgYAE8IfHA1evXr8dcHnh/f39xcXF9fR3nqnFK+uJi+e3t7XK5bMdoELAA1txEA1f1ev3i4qLT6TzYRy1ulxXL5/OdTieXy93c3MQtQsrl8v7+vjEtELAA1jNdHR0djTOkVKlUGo1GynhVb4xqnAakrVYr3mX8p59+evbsmRMBAhbAOoinBd+8efNgvkmPVmEYbmxsvHjxYnd3d/wGpKVSyUQhCFiwVtzYCIKgVCodHx+nf1u9Xq9WqynRant7e39/XzcHELAAnrpxiq6iKPry5Uur1UqKVqVS6eDgQBEVCFgA5MIwDILg8PAw5Xuq1Wq9Xh9Zxh6PWv3000+zR6t6vb69vT3mrCIgYAGsarq6v7///fffRw5cxe3dX716lR6JoiiKlwp2u93/fft+/nxnZ2dnZ6e/3qtcLtfr9S9fvmgZDwIWrIkgCGxHKF0NaLVa3759ixf3Df/fvb29/s4LA5rN5sXFRXpbrOHNDeOeWJ8+fXr27NmD0Q1YkGeVSsVRgLn48OHDg32MWLN0VS6XDw4Okr6hVqtdXl4OXxXxwNXx8fHIOcG4IVZ6+4YHf2A8bNbpdKboIw/MzggWwDSCIAiCICVdxY0YhtNVSjn8/f39t2/fbm5uJk3qjUaj0Wh0Op2Dg4N4KOvZs2dv3rw5Ozu7vLxstVq//PKLzlggYAFkPV2VSqWUmcGvX7+OzElhGPYy0ICk4a7xxf+33W73Htjx8fHHjx8rlcr9/f3Lly9VZYGABZBd8Xxc0r+enZ01m83h2b2Dg4ORKafT6ZydnSW1b5giY+VyuV7GevPmTS6Xq1ar3W731atXMhYIWMBTFARB/IfMrhg4ODj45ZdfpkhXIzu8zz5wNTJj7ezsxM1vnz179vr16263G39dxoLl2HAIgOwIw/DNmzfv3r3L8iN8+fJlUj1TpVKZKF3FNVJzXxtRq9XOz8/v7+/jvxYKhb29vSAIarXat2/fel8HBCxYAdvb2w7CjPL5fJbHV+LGCkmPMK5qHzNd3d/ff/z4sdlsLmjlaa1W+/333/sfefywq9Xq6empKw0WzRQhkKH4Eq+tazab2XyEm5ubSW2r4oGr4bQ0Ml21Wq0vX77E3xwEQX+rqvFbMzyo1WrV6/VeQf3x8XHcAKLdbn/9+vXnn392yYGABay/3vBVtVrNYAHWwcHB69evR/5TFEXn5+cTpatcLndycvLixYutra3+blidTqfVav348aPZbM4YthqNRqFQ6AWsfD5fKpXin1koFJrNph3KQcAC1lwQBPHw1f39fafTydrDC8Pw8PBwZOnV/f3958+fR3ZkeP369XC6qlarKZXmcQyKo0+9Xi8Wi+12e+qYFUVRtVrtNes6OjqKRwdrtdrGxoaABYujBgvIhGKxGGeOi4uLrDXED4Jge3s7KY58/vx5eCecMAxHblNTKBSOj4/HrDMrl8u//vprGIYp2+mkazQa9Xp94LnE6zTb7fb5+bkLDwQsyLrnzw0JT68XXwYCQUbCX1LFUq1WG64Yi7fQGZmiRu6Nk+7w8PDk5CSlZXy6KIr6t0Q7PDyMY1+j0Wg2mxkcLIQ1uSM4BDDH27CDMJ24v3kul+t0Ot1uN2uPLWkAKYqiy8vLgfm7IAg2NzdT8lDcUPTu7i6+ZnZ3dx9MXYVCodcvdNLHH1dc9TedL5VK8RhhrVbb3t5W7Q4CFrCe8vl8XKt0dXWVtfnBfD4/cmebXC43svSqWCwmNXmv1+vxIr7+TBaG4TgpJ95bcLqMFUVRf0l7GIa99hA3NzedTmeKcTUgnSlC4PFltnt7GIZJaalarbbb7eHvT1ppeHZ2Vq1WhxdI1mq1er3+8ePHB/t/xj3Zp6jHajQaFxcXvb8WCoVeoqrValMkNkDAArIuDMP9/f34z1krCdre3h45utPpdOr1+vDk4EBTq9iDPUUbjcaY/T97PdknfSK3t7cjE20uw13HQMACmF5vfrDVakVRlKnk9/Lly5H/dHZ2NpyWtra2+kudeunq9PR0nM5eYy7rC8Nwimq/eJaw99f9/f3eSFgURRlcWAACFvD/6So0nZ2dnfgPI/eZeSzxcNTIxlcjF9/FfRmGv3lkE4eRxl/WF4bhpINYA7OEz549643MDfwTIGABKy8Igr29vfjPwyVNj2hg5V2/SqUyMHwVBEGpVBqeHDw/P59oAq5Wq33//v3BbyuXy1MMYg3MEvZ/Huh0OnaABgELWB+FQqGXSwYSwOPGvqQhonq9PhwEi8Vi3Ia+X7PZjDconOhX39zcjPNtUwyXRlHUPwP74sWL3nOs1WoZ3JsIBCyAKW1ubsZ/yFR5e8rw1XA1VRAEI1f2DQ90jRmDxhn02tvbm3Q54cAM7NbWVv+QmzIsELCA9dFrd95qtbLTAWt7ezspXQ2X4W9tbQ03yjo/P59uxnN4c5ukCLixMfEb+MBD6l8gmZ3hQxCwgP/7ctrYmHrPuCfrxYsX8R+yM4IVhuFPP/008p+GWzOEYTg8OdjpdKaYHOwZc5ZwijKsgZ/cGz7M5XJRFNk2BwQsyKKRK85IjzK9WarsdGPK5/Mje1/V6/Xh4at8Pj+85+DIJg4TGafkfLpVq/0/uf8nxGsYXZMgYAHroBdlMjJ8EgTB8IhUbLgSfOTwVavVmvG51Gq1eKfCdEnzmOk/uX+rx/4RrJyOoyBgAWuWrnKZqQEqFovDI1JxbBquqRo5fHV+fj57Mdk4s4TTTUn3p6hCodC/WFIZFghYwDoYGEHJgl5N2ICRiwcPDg6Gc9jShuKm26G5f2wsn8/3LyRUgwUCFrAOejVAGbm1h2G4u7s7/PX7+/vh0Z1isThcBTWX4avcInuupv9k7UZBwIIsyuCQzKrIQo+GgRGdnmq1Oty6fbg1Q6fTmVdSHKcGaxGnoL9CCxCwICumm7V5sqYo016opO7tw9XfhUJhuP5pOIdl0MBQ3MBHglar5bIEAQtY8TegP1tlZmHgJAzD/f394a9HUTT88EZGw5VYhTcwxjbwkUAZFghYwGrrHwEas7XmotPeyE5mV1dXw/ODw1FsZJcsQMACWLZMzagm9e388ePHwFcKhcJwd4aLi4s57pc8RZf2uXiU2i8QsADWUxAEe3t7w18fOT84XKo1931mnj9//ijHYXGrF0HAAqY33e4lPLpCoTBy/WCj0RieHxyOYpeXl9kvbwcELIClSuqvMTzrNzKKzb28fZz1lZ1OR9UXCFgA2bWzs5MUYga+MjxIOXIXnVkEQdBbX5lu9qovywZBwALW1uM2aA2CYGQHrFarNTBEFATB8F46V1dXcyxvz+VyhUJhnPL/uQybDbTFGjPYAQIWsAJG1j8t87ePfADX19cDyalQKAyPYM29x8SYKWcRezNnrfUrCFhALmernNWUNFx0fX394Hd2Op25d0kds0fDdAVYIhQIWLB6HnckZqUlbVOzBMNNrWLDQ0TDpVrDbUhnN+Za1NlHzpTJg4AFrLOkXZaXY+Sgzsjq7+GANTzKNXvQXOggU//8Y7fbHZgDNQQLAhbAAgNWFEUDQ1NhGA4HrLkXQiUVhA0YLsCf4skOj4EZggUBC1htc+9+Pp0wDEe2TR+ZnAY2K1zE4x9z+6DhAvwpfv7AcwzD0CpCELAgox6xlmi1ZGdyauQez8NNEIYHulqt1twLsMa8fqabmgyCoL/gbHgMbOShAAQseGSPW0u06ofucd4Exx6zGR7omnsBVhiGYwas6aYmBzpsDUwRZmrvbRCwAKbUP0o0Zm+CuUv6vcP1ScPfeXd3N/e0N05Aj6JougKs/jR5f38/8K8q3EHAAtbNyEKoTFlCi9HhNvEjNRqN6Qqw+jPi9fX1wPymrcpBwALWQX9AKZVKj1K+NjJVDI/uhGG46EcShuH+/v6YAWv2JzswvxkEgREsELCAddDfAz1T5Wvdbne4en2gRGnuSwjz+fyYVVDT/eowDFMCVqFQSGq4CghYwCoZmGJbuR4Bc1xCGATB0dHRmL906vbr/QFuIKVp0AACFmSaeZapPUqd+5iDRoteYVcsFsccQJq6AKu/zUSz2RxIafYoBAELMs1a9/EN9Bp9lCLrkbFmeP/mhebmMAzHrPGapTtruVzu/fnHjx8DKW3M+npAwAKyrtFotFqt3l+3t7cz0qZ17ssDHwzl/eknRbVanW5ecmCfn4E2qiN3AQIELGBV9UeZMbfhWzNhGL569Wqc7+x0OlMnv3w+3+vSPryPYf+/AgIWsPIGhlIyUgm0tHneIAi2t7fHjJXfv3+fbvgqCIL+ocGrq6uB+UH7O4GABayVgYqicrmchZv9mPXmszfHKhaLP//885gHaurhq0Kh0P9Qh+cHBSwQsCDrst+RPFMGdn0plUpLniUcrmcf0+yjXGEYvnz5csxvnnr4Kvd/K/SH1w+OuT8PIGDBY3qsPfVWVKPRuLy8TEoDSzBLPfssGSseNxpzqKzZbE79OMMwPDg46P314uJiYH7QDjkgYAFraKCl+P7+fhZmrMZ5DFO3Po/3pTk8PBzz+yuVytTDVxsbG73H2el0bm9vU+IXIGABa6LT6fTv/bf8WcJhY+7bs7u7O0UWDIKgVCodHx+P+f3n5+ftdnvqJNdffVWr1QaCmvWDIGAB66lWq11cXPR/ZcymUHMxyxTh1tbWpFlw0nTVbDabzebUuzsXi8X+gzm8eNDwFQhYwNoauPHv7+/PvkBvTElF7gP1VUljSAMdENLF2y2Pn67u7+/Pz8+nnhwcGL6qVCoD5e3FYlEBFghYwNrqdDr9/Rry+fzSGmIN1CT1DNTaJ+Www8PDMZc1hGG4t7c3Ubo6PT2dZT/pgeGrgZGwIAhsjwMCFqwMexFOYXiW8KefflrOIFbS1n7psam/aOz169fpDzUIgsPDw5OTk4me0e+//16tVqd+XgPDV/V6fWAQrlAomB+ExdGwB+Zs6pVlT1y9Xu+/3+fz+SAIoiiauvxofPf398OF3gMBK95luZeeu93u9+/f4x6hhULh5ORkY2Oj3W4PPNowDDc2NsIwnLSq7OzsrH+Xxumuw/5fWq1WB4avNBcFAQtYf1EUVSqV/s4Fh4eHs9R3j6lWq52cnAzXqm9tbYVh2JuhazQaURT1AlY+n7+5uWk2m3ENU6FQ+PXXX5vNZr1ej6vmNzc3i8Xi+J2u+tPe6enpcFabyMD+hsPVV4VCYfwmEYCABayqRqMxfNd//fp1t9udpQ5pHDc3N8MBa3iq9/b2tj8t5fP58/Pz/nBWKpVmrBmPoujz58+zzAzm/lyo2HtUnU6n0WgYvoIlU4MF8+fuNXW8OD8/7/9KoVAol8uLLsYa2JuvZ6DOfeDbtra2arXa58+fk6q4JlWr1T59+jRjusrlcsVi8ejoqPfX4T12DF/BEhjBgjkbs0clw+JBrP5Sp1wud3BwEEVREASLmytMasGws7OT8m3xOsdqtdrtdo+OjmYZu4qi6MuXL61Wa/bnGIbh69ev+0PhQKOvIAj29vZcbCBgAU9IrVbL5/Nv3rzp/+LPP/8cjxItKGN1u92Rde7xQrze8M/At5VKpfhf42/Y3t6Oa94njVbVavXm5mYu06BxJ4j+fD+8x06xWFxajzF4ykwRwvwtrYfTWmq1WpVKZeCLx8fHe3t7C0oGtVptYD/E2MBIZK1W6x/E6h9mq9Vq9Xr9w4cP5+fnA+XkSZrN5unp6adPnz5//jyXdBXvb9h/iL5+/Tow6haG4cuXL11jsARGsGD+dMeeRTxRuLOzM3AYj46Oms3myG4Is6vX6yPPWqlU6k8/V1dX/XXu/f8aP6RarRY/yLhJ+ubmZi+ldbvdm5ubm5ubVqvV6XTm3oFia2urv4tpPDk4UNu+vb2tjQgIWLCqBqaWmFRc7f7mzZuBpXzxMr1arVYsFucbs5J2JNzd3W02m71TOfBtu7u7l5eXAw/jUc77wcHBL7/80vvryD12isXiFJOYgIAFWfHs2TOzhNMF00KhUCqVdnd3UwZawjAMw7Ber29tbXU6nbkEmiiKWq3W8C/d2tra2PjfUoput9tfgz/FZs8LSldv3rzpryH7/fffBw5LGIZWDoKABSvvp59+mlfl8tqLy4YezFUDyuVyuVxutVr5fH72mNVoNAam/3pevHjRa51Qq9UGSsGCIHjcszycrs7Pzwe6wMedscxcg4AFKy+fz8eL4WWslFy1sbFRKpUGFr5NZGtr682bN1EUbW9vz5hok7ph/eUvf6nX672fXK/X+wNWGIaNRuOxzvJwuqpUKsPt7wc6YwECFqx2gIiiaDm76a3WYcnn8zs7O7PkqgGFQiFu5RDHrOmOeRRFva1v+g1M+Ha73SiKeo88n88/ynRwEATFYnEgXcWdtIYnBwfaXgACFqy2o6OjbrdbKBSMY8W5KgiC/f394Y5Tc5HP5+Mi7kqlUigUJo1ZjUajWq2OnEfrn/Ct1WqlUql/QGj508HxlF//msE4XX358mU4Xb169WpBBxwQsODR/Pzzz3EFzxPMWHHR+ubm5s7OzjKbWx4eHh4eHk6x2DDunjByX8L+YaqBycR4OnhpQ5VhGA4kvJR0tbe3py8DCFiwng4ODuLb8xPJWL1ctb+//4iF1b3FhsViccwdo2u1WlJD9v5hqiiKKpVK/6K8uBJrCQErDMODg4NyuTxOuorbhXgBgoAFa6tUKv3Lv/zL5ubm7e3tusasXpOFFy9eZGfB2qSLDW9ubgY2Q4zl8/lSqRQPU8WtUAe6Hvzyyy/z6hmRdHi3trZ++eWXgfm+lHSlLwMIWLD+nj17dnx8XK/Xc+s1lDVm86rHFS82bLVaD2bclEGso6OjXm/04UGsZ8+evXr1akEnd+TAVfy7Li8vh9NVuVw+ODjwogMBC56Kcrkc71iy6l2y4iYLL1682N3dzUKzzTFj1vHxcW+xYdLxj3ezGRkWDw8P49nGeBDr4OCgfzxpa2tr7hkrDMPt7e2XL18OF6qfn5/3d5nvfX8QBNIVPP6H6uFNVYElaLVa3759W8S2ekvIVTM2r8qC+/v7arXaaDRGFqcfHh4mtTY4Pz/vbY/z+vXr4bGuTqfz6dOn2c9sHK1++umn4fnK+/v733//PW7KMJyuzAyCgAVPXTzFsxK9sv7jP/4jiqJisbhma/7jzpwDeSiOKUkV4qenp/E7ZxiGR0dHIwvORg4vjaM35XpwcDAcrXK5XL1er1arwz857shgzSBkhClCeEzxSrevX79mv1dWt9tdy5t33NMhXmzYi1nxDODu7u7IiPPLL7/EA2C1Wi0ezxv+nqOjo06nUyqVms3mOAF6nKWXnU7n69evwzVkcdPRk5OTkY8WeBRGsCATOp3O9+/fs1yY9a//+q/DRdZrptVqnZ+f9xYDHhwc/PrrryO/M4qiT58+1Wq1kT0/BzSbzR8/ftzc3HS73dyfFVpxosrlcpubm8ViMV4kmPJDKpXKyD154pnEkVX5gIAFjLjBC1iPexaiKCqXy0nZpdcfYaLKp/v7+zhm5XK5MQec4mg1PAwWD1wdHh7axRkyyBQhZEivm8DGxsbK1b+v2VnoH1McWYw1sGZwZ2dnnKDz7NmzMXNVFEW1Wi1phlE9O2ScESzIqHq9XqvVshOzns4IVr94NDFl/u7+/v709LTdbhcKhaQa806nE29JOWauury8bDabSd3nU1YXAgIWMG7Muri4yMKk4d///veV7suwUGdnZ7e3t7lcLiljxdOO+Xx+a2trc3Mzl8vFw11RFMX/sdls3t7exvOSIyP1g6sLAQELmEyr1apWq4+4zU4Yhm/evHFfT4/C8a7eI1uux9Jn/UbKyMaOgIAFaysex0rqjbnogPX27Vun4EFfv369ubl5sDoq7hHabrfj4av+Ezrp6kJAwALmY/nzhicnJ0dHR4587NOnTycnJyk5+Pv3751O5/Xr12M2Ze10Ov1/NVIIAhbwaOJq6CUMaJkfnML9/f3FxUWxWDSvBwIWsJJardbV1dVElT0Tpau9vb2kTWMAGEkfLFh5W1tbcZnO3JNW3GxJugIQsEDS+v+zh9fX1ynL/tPpEg4wC1OEsOYGFqw9WBcfhmE+n9/f33+CbUUBBCxgYvf393d3dzc3N7lcrtlsDvxrsVgsFos7Oztjrn0DQMACAFiSDYcAAEDAAgAQsAAABCwAAAQsAAABCwBAwAIAQMACABCwAAAELAAABCwAAAELAEDAAgAQsAAAELAAAAQsAAABCwAAAQsAQMACABCwAAAQsAAABCwAAAELAAABCwBAwAIAELAAAAQsAAAELAAAAQsAQMACAEDAAgAQsAAABCwAAAQsAAABCwBAwAIAQMACABCwAAAELAAAAQsAAAELAEDAAgAQsAAAELAAAAQsAAABCwAAAQsAQMACABCwAAAQsAAABCwAAAELAEDAAgBAwAIAELAAAAQsAAAELAAAAQsAQMACAEDAAgAQsAAABCwAAAELAAABCwBAwAIAELAAABCwAAAELAAAAQsAAAELAEDAAgAQsAAAELAAAAQsAAABCwBAwAIAQMACABCwAAAELAAABCwAAAELAEDAAgBAwAIAELAAAAQsAAAELAAAAQsAQMACABCwAAAQsAAABCwAAAELAAABCwBAwAIAELAAABCwAAAELAAAAQsAAAELAEDAAgAQsAAABCwAAAQsAAABCwBAwAIAQMACABCwAAAELAAABCwAAAELAEDAAgAQsAAAELAAAAQsAAABCwAAAQsAQMACABCwAAAQsAAABCwAAAELAAABCwBAwAIAELAAAAQsAAAELAAAAQsAQMACAEDAAgAQsAAABCwAAAQsAAABCwBAwAIAQMACABCwAAAELAAAAQsAAAELAEDAAgAQsAAAELAAAAQsAAABCwAAAQsAQMACABCwAAAQsAAABCwAAAELAEDAAgBAwAIAELAAAAQsAAAELAAAAQsAQMACAEDAAgAQsAAABCwAAAELAAABCwBAwAIAELAAABCwAAAELAAAAQsAAAELAEDAAgAQsAAAELAAAAQsAAABCwBAwAIAQMACABCwAAAELAAABCwAAAELAEDAAgBAwAIAELAAAAQsAAAELAAAAQsAQMACABCwAAAQsAAABCwAAAELAAABCwBAwAIAELAAABCwAAAELAAAAQsAAAELAEDAAgAQsAAABCwAAAQsAAABCwBAwAIAQMACABCwAAAELAAABCwAAAELAEDAAgAQsAAAELAAAAQsAAABCwAAAQsAQMACABCwAAAQsAAABCwAAAELAAABCwBAwAIAELAAAAQsAAAELAAAAQsAQMACAEDAAgAQsAAABCwAAAQsAAABCwBAwAIAQMACABCwAAAELAAAAQsAAAELAEDAAgAQsAAAELAAAAQsAAABCwAAAQsAQMACABCwAAAQsAAABCwAAAELAEDAAgBAwAIAELAAAAQsAAAELAAAAQsAQMACAEDAAgAQsAAABCwAAAHLIQAAELAAAAQsAAABCwAAAQsAQMACABCwAAAQsAAABCwAAAELAAABCwBAwAIAELAAAAQsAADm5v8NANeDecdF9INYAAAAAElFTkSuQmCC&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="103" class="link-to-prism">src/app/services/global-provider.ts:103</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ordine"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            ordine</b>
+                            <a href="#ordine"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/Ordine.html" target="_self" >Ordine</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/services/global-provider.ts:22</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ordineModificato"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            ordineModificato</b>
+                            <a href="#ordineModificato"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/services/global-provider.ts:23</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="platform"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            platform</b>
+                            <a href="#platform"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Platform</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/services/global-provider.ts:25</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
+// import &#x27;rxjs/add/operator/map&#x27;;
+
+//import { AlertController, Platform } from &#x27;@ionic-angular&#x27;;
+
+import { AlertController, Platform } from &#x27;@ionic/angular&#x27;;
+
+import { Ordine, Settings } from &#x27;../../app/app.model&#x27;;
+
+@Injectable()
+export class GlobalProvider {
+  private _dbName &#x3D; &#x27;campomaggio.db&#x27;;
+  private _appVersion &#x3D; &#x27;0.0.1&#x27;; // APP_VERSION
+  private _appBuild: string &#x3D; &#x27;1&#x27;; // APP_BUILD
+  private _appTitle &#x3D; &quot;Campomaggio&quot;;
+  private _settings: Settings;
+  private _codiceAzienda &#x3D; &#x27;CAM&#x27;;
+  private _maxNote: number &#x3D; 120;
+
+  private _log &#x3D; [];
+
+  public ordine: Ordine;
+  public ordineModificato: boolean &#x3D; false;
+
+  constructor(public platform: Platform,
+              public alertCtrl: AlertController) {
+    this.log(&#x27;GlobalProvider.constructor() - started&#x27;);
+  }
+
+  getDBName(): string {
+    return this._dbName;
+  }
+
+  getAppVersion(): string {
+    return this._appVersion;
+  }
+
+  setAppVersion(value: string) {
+    this._appVersion &#x3D; value;
+  }
+
+  getAppBuild(): string {
+    return this._appBuild;
+  }
+
+  setAppBuild(value: string) {
+    this._appBuild &#x3D; value;
+  }
+
+  getPlatform(): string {
+    let myplatform &#x3D; &#x27;&#x27;;
+    myplatform +&#x3D; this.platform.is(&#x27;android&#x27;) ? &#x27;Android&#x27; : &#x27;&#x27;;
+    myplatform +&#x3D; this.platform.is(&#x27;ios&#x27;) ? &#x27;iOS&#x27; : &#x27;&#x27;;
+    //myplatform +&#x3D; this.platform.is(&#x27;windows&#x27;) ? &#x27;Windows&#x27; : &#x27;&#x27;;
+    return myplatform;
+  }
+
+  getMaxNote(): number {
+    return this._maxNote;
+  }
+
+  getSettings(): Settings {
+    return this._settings;
+  }
+
+  getCodiceAzienda(): string {
+    return this._codiceAzienda;
+  }
+
+  setSettings(settings: Settings) {
+    console.log(settings);
+    this._settings &#x3D; settings;
+  }
+
+  getTimeout(): number {
+    return 30000;
+  }
+
+  log(str: String) {
+    console.log(str)
+    //this._log.push({type: &#x27;log&#x27;, text: str});
+  }
+
+  error(str: String) {
+    console.log(str);
+    //this._log.push({type: &#x27;err&#x27;, text: str});
+  }
+
+  getLog() {
+    return this._log;
+  }
+
+  appTitle() {
+    return this._appTitle;
+  }
+
+  dispHigh &#x3D; &#x27;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAADICAYAAAAePETBAAAACXBIWXMAABcSAAAXEgFnn9JSAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAOsSURBVHja7N2/jxRlHIDxZ2Z2b5HbEyEKeMkRuFAYC3oSCysttKehAjutLYyFjaUVCQ0/ChtiY0KhhfFPwKAhamEwJngQIOBy5+3N7rvzvhZecQW3cwszlws8T7K5Zm+L7ye739kt5s1SSmxXlmXngDPACtZES8C1lNLV7Z7QqXmBd4D3nGOj3QG2Bcmdz95KkD1WZ5Yn9/YXvLk8T6wSU1aPbdbt5Ty+VzJ4MGoHZOmtBb747jTrTwJVUKSuxZN9vv78N7796o92QGJMhDISykg1EaSucVlRTWJ7H1kpQRhHJmNBdlIYRWI125xc6l5lmSCCmCCCmCCCmCCCmCAmiCAmiCAmiCAmiCAmiAkiiAkiiAkiiAkiiAligghigghigghigghigpgggpgggpgggpgggpggJoggJoggJsiL2Ew3wZzr5Rxdnmf9n8AkRKdX0+KRPv3X5toDGTwc8cOVvxgNq5nvtvkydvDoPm7/PJjtn1JK2z74/6bxyUejj6vTZu4Ocanb8+yQh5t//3RUjbS8ZaZPLas5YccRttC0mde9Q84AHwL3HWMzV8LAdeCbZwV5HzjrHButnAbiUvcqyxr7pr50qMMn7/bZCInKX05qO7xQcP2XIT/+XrYDcvxIh08/fgP+jeCBLvUdm6O88KA9kGqcYCVQrUeCv2XVtg8Iq7N9lLhDXOomiCAmiCAmiCAmiCAmiAkiiAkiiAkiiAkiiAligghigghigghigghigpgggpgggpgggpgggpggJoggJoggJoggJoggJogJIogJIogJ8iI2000w8wwoMorCe8LvbLoZRd4iSFZk8GoOBRTeJra+AwV5L2sP5NadMR98dpdQJZIetfV7Gb/eDe2BDIaR729tOGmXuiC2R6+yLgE/AU8cVSMdBG5MvXDyyKPd73mOPLoMnAcqx9hIBXAF+OhZQfItL2S7sLdd6l5lWWNfDE91e1x7fZHVGJngV/W6ljtdvlx9xMW1QTsgB/KCt1+Zh1jhbyc7qNvjxHCtvXdIIEIVWIuRIEhth/KcYfTII5e6CSKICSKICWKCCGKCCGKCCGKCCGKCmCCCmCCCmCCCmCCCmCAmiCAmiCAmiCAmiCAmiAkiiAkiiAkiiAkiiAligghigghigghigghiglhntifnUHRZyLwr6Y4quuzP8/ZA1lPk79EGgxSZCFLbyRhZqVo8YefmuGRp5baTdocIYnt0qZebf9ccVSMtbJnpU5t6wo7tfv8NAIaMZvU5Afd2AAAAAElFTkSuQmCC&#x27;;
+
+  dispMed &#x3D; &#x27;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAADICAYAAAAePETBAAAACXBIWXMAABcSAAAXEgFnn9JSAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAANFSURBVHja7N29b9x0HMfxj+07wkNDRXmSKoJoxZSBfwCQmGCAvQsTsMGIGNiZGJFYeFgrxi5MjIwgQBFiAgmVVAKEFJI2OeLYZsmQoYnjYIcTvN7LLb4bvi+df7+7wb+i67ocV1EUryW5lmQzGqO1JNe7rvv0uAtmPR/wXJIXzXHUbiY5FqQ0n+UKyJI1G3j97SQbh+8rjK+3vSRXkjwxFci3SZ4350G9neR9t6zladCdBIhFXUCACAgQAQEiIEAERECACAgQAQEiIEAERECACAgQAQEiIEAERECACAgQAQEiIEAERECACAgQAQEiIEAERECACAgQAQGipQPpjGxwg2Y29Lm9Dyd5NsnqGd77f+znJOtTgqwn+dKcrSFA9O/Ud8v6/fD1J6MapatHZnrXip4Tdoxwim3XCTPv+4ZcS/JKkl+NcZQuJ7mR5LOzgryU5FVzHLXFSSAWdbssjfbDcO3SLG+9cCF7dZemNby+HlutcuO73Xzxw2IakKcen+WdNx9NbrfJgb+1envyniw++G06kGa/SzbrNHfa1A2Qvu5NUm8Pu5VYQyzqAgJEQIAICBABASIgAgJEQIAICBABASIgAgJEQIAICBABASIgAgJEQIAICBABASIgAgJEQIAICBABASIgAgJEQIAIyH+xQQ/BLIskVZGq8kz40023SFVOCFJURfJgmVRJ5TGx/V2sUq4U04Fs3NzPy+/eSt106Xj0dmGlyPe36ulAtnbbfL6xZ9IWdSBa0l3WR0m+TvKnUY3SQ0m+OnHj5Mij8++fHHn0cZLXkzTGOEpVkk+SvHFWkPLIB+kc1m2Lul2WRvth+Mx8JdcfuZztts2Bg6N7uzqb573tP/LhztY0IBfLKuv3PZC0Tfx3cormK7myuzPdN6ROmzR1dto2NZDeLpVldltHHlnUBQSIgAAREAEBIiBABASIgAAREAEBIiBABASIgAAREAEBIiBABASIgAAREAEBIiBABASIgAAREAEBIiBABASIgAAREM2GXVwm1TyrhaeSnqpqnvvLcjqQO12bX/7ay1bX5gBIb0+3bTabCU/Y+WZ/kbXNH03aGgJES7qoLw5fd4xqlFaPzPSunXjCjs6/vwcAqxWj08BGf3sAAAAASUVORK5CYII&#x3D;&#x27;;
+
+  dispLow &#x3D; &#x27;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAADICAYAAAAePETBAAAACXBIWXMAABcSAAAXEgFnn9JSAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAL0SURBVHja7N0/jwxxHMfxz87uRg4X8ae6uIKoLngCaGlEotKo8BA8BZVEotH404rSc1ASEjWJP1cgEuzh2LsZhSuucDvmzLgVr3ezzcwW31dmfrNbzK9XVVU2qtfrXUhyLsli1EbzSe5WVXVnowMGNV9wPMlJc2y1V0k2BCnMZ7oCMmUNGh6/lOTp2nk946vta5IDSfZ3BfIkyQlzbtTlJFfdsqanRncSIBZ1AQEiIEAEBIiAABEQAQEiIEAEBIiAABEQAQEiIEAEBIiAABEQAQEiIEAEBIiAABEQAQEiIEAEBIiAABEQAQEiIEAEBIimDqQyssY1mlnT9/buTXIsyewmzv0fe5FkoUuQhSQPzNkaAkRbU90t693a53OjaqWD62b6y3o1O+wYYRePXRNmXneFnEtyOskbY2yluST3k9zbLMipJOfNsdWWJ4FY1D1lqc0fhi+TXE8yk6RvfLW9TXI2DXa6awryIsk1c27UziYgTW9ZnoObZ8sji7qAABEQIAIiIEAEBIiAABEQIAIiIEAEBIiAABEQIAIiIEAEBIiAABEQIAIiIEAEBIiAABEQIAIiIEAEBIiAABEQIAICxAj+bRBbHjWv0y2PDufny+SHrq7fainJkS5Bdic5Y87WECDamupuWTeTPEry0ahaaXeSh5MOsOXRVjx2/cGWR7eSXEyyaoyt1E9yO8mlzYIU675If2Hdtqh7ylJrPwyPDrfl7r65fCrLrPgXpbaDg2GufHqfG6MP3YDsKvpZmNmRlKtJBaS24bYc+DLq7goZp0xWxxmVZcZAattTFPlSltYQi7qAABEQIAIiIEAEBIiAABEQIAIiIEAEBIiAABEQIAIiIEAEBIiAABEQIAIiIEAEBIiAABEQIAIiIEAEBIiAABEQIALy3zdodnCR9IeZ7Xkr6W/VH2Z7UXQH8rkq8/rb13yoyqwAqe1QWWZxddwdyOPvy5lffGbS1hAgmtJFfXntc2RUrTS7bqa/bOIOO/r7/RgAGcp2OMoNcCAAAAAASUVORK5CYII&#x3D;&#x27;;
+
+  noimage64 &#x3D; &#x27;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAMgCAIAAABUEpE/AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAADoASURBVHja7N1vUxrbmjdgIkFU0qh9dJud6M6e1DmTqqmpOjXf/yvMmzM1b1JndirumD8GNioEBVvwedHPZhigW/7b4HW9SoxR6G7oH2vd617PKpVKDgCA+dlwCAAABCwAAAELAEDAAgBAwAIAELAAAAQsAAAELAAAAQsAQMACAEDAAgAQsAAABCwAAAELAAABCwBAwAIAELAAABCwAAAELAAAAQsAAAELAEDAAgAQsAAAELAAAAQsAAABCwBAwAIAQMACABCwAAAELAAABCwAAAELAEDAAgBAwAIAELAAAAQsAAAELAAAAQsAQMACABCwAAAQsAAABCwAAAELAAABCwBAwAIAELAAABCwAAAELAAAAQsAAAELAEDAAgAQsAAABCwAAAQsAAABCwBAwAIAQMACABCwAAAELAAABCwAAAELAEDAAgAQsAAAELAAAAQsAAABCwAAAQsAQMACABCwAAAQsAAABCwAAAELAAABCwBAwAIAELAAAAQsAAAELAAAAQsAQMACAEDAAgAQsAAABCwAAAQsAAABCwBAwAIAQMACABCwAAAELAAAAQsAAAELAEDAAgAQsAAAELAAAAQsAAABCwAAAQsAQMACABCwAAAQsAAABCwAAAELAEDAAgBAwAIAELAAAAQsAAAELAAAAQsAQMACAEDAAgAQsAAABCwAAAELAAABCwBAwAIAELAAABCwAAAELAAAAQsAAAELAEDAAgAQsAAAELAAAAQsAAABCwBAwAIAQMACABCwAAAELAAABCwAAAELAEDAAgBAwAIAELAAAAQsAAAELAAAAQsAQMACABCwAAAQsAAABCwAAAELAAABCwBAwAIAELAAABCwAAAELAAAAQsAAAELAEDAAgAQsAAABCwAAAQsAAABCwBAwAIAQMACABCwAAAELAAABCwAAAELAEDAAgAQsAAAELAAAAQsAAABCwAAAQsAQMACABCwAAAQsAAABCwAAAELAAABCwBAwAIAELAAAAQsAAAELAAAAQsAQMACAEDAAgAQsAAABCwAAAQsAAABCwBAwAIAQMACABCwAAAE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qHq9XqvVshOzns4IVr94NDFl/u7+/v709LTdbhcKhaQa806nE29JOWauury8bDabSd3nU1YXAgIWMG7Muri4yMKk4d///veV7suwUGdnZ7e3t7lcLiljxdOO+Xx+a2trc3Mzl8vFw11RFMX/sdls3t7exvOSIyP1g6sLAQELmEyr1apWq4+4zU4Yhm/evHFfT4/C8a7eI1uux9Jn/UbKyMaOgIAFaysex0rqjbnogPX27Vun4EFfv369ubl5sDoq7hHabrfj4av+Ezrp6kJAwALmY/nzhicnJ0dHR4587NOnTycnJyk5+Pv3751O5/Xr12M2Ze10Ov1/NVIIAhbwaOJq6CUMaJkfnML9/f3FxUWxWDSvBwIWsJJardbV1dVElT0Tpau9vb2kTWMAGEkfLFh5W1tbcZnO3JNW3GxJugIQsEDS+v+zh9fX1ynL/tPpEg4wC1OEsOYGFqw9WBcfhmE+n9/f33+CbUUBBCxgYvf393d3dzc3N7lcrtlsDvxrsVgsFos7Oztjrn0DQMACAFiSDYcAAEDAAgAQsAAABCwAAAQsAAABCwBAwAIAQMACABCwAAAELAAABCwAAAELAEDAAgAQsAAAELAAAAQsAAABCwAAAQsAQMACABCwAAAQsAAABCwAAAELAAABCwBAwAIAELAAAAQsAAAELAAAAQsAQMACAEDAAgAQsAAABCwAAAQsAAABCwBAwAIAQMACABCwAAAELAAAAQsAAAELAEDAAgAQsAAAELAAAAQsAAABCwAAAQsAQMACABCwAAAQsAAABCwAAAELAEDAAgBAwAIAELAAAAQsAAAELAAAAQsAQMACAEDAAgAQsAAABCwAAAELAAABCwBAwAIAELAAABCwAAAELAAAAQsAAAELAEDAAgAQsAAAELAAAAQsAAABCwBAwAIAQMACABCwAAAELAAABCwAAAELAEDAAgBAwAIAELAAAAQsAAAELAAAAQsAQMACABCwAAAQsAAABCwAAAELAAABCwBAwAIAELAAABCwAAAELAAAAQsAAAELAEDAAgAQsAAABCwAAAQsAAABCwBAwAIAQMACABCwAAAELAAABCwAAAELAEDAAgAQsAAAELAAAAQsAAABCwAAAQsAQMACABCwAAAQsAAABCwAAAELAAABCwBAwAIAELAAAAQsAAAELAAAAQsAQMACAEDAAgAQsAAABCwAAAQsAAABCwBAwAIAQMACABCwAAAELAAAAQsAAAELAEDAAgAQsAAAELAAAAQsAAABCwAAAQsAQMACABCwAAAQsAAABCwAAAELAEDAAgBAwAIAELAAAAQsAAAELAAAAQsAQMACAEDAAgAQsAAABCwAAAELAAABCwBAwAIAELAAABCwAAAELAAAAQsAAAELAEDAAgAQsAAAELAAAAQsAAABCwBAwAIAQMACABCwAAAELAAABCwAAAELAEDAAgBAwAIAELAAAAQsAAAELAAAAQsAQMACABCwAAAQsAAABCwAAAELAAABCwBAwAIAELAAABCwAAAELAAAAQsAAAELAEDAAgAQsAAABCwAAAQsAAABCwBAwAIAQMACABCwAAAELAAABCwAAAELAEDAAgAQsAAAELAAAAQsAAABCwAAAQsAQMACABCwAAAQsAAABCwAAAELAAABCwBAwAIAELAAAAQsAAAELAAAAQsAQMACAEDAAgAQsAAABCwAAAQsAAABCwBAwAIAQMACABCwAAAELAAAAQsAAAELAEDAAgAQsAAAELAAAAQsAAABCwAAAQsAQMACABCwAAAQsAAABCwAAAELAEDAAgBAwAIAELAAAAQsAAAELAAAAQsAQMACAEDAAgAQsAAABCwAAAHLIQAAELAAAAQsAAABCwAAAQsAQMACABCwAAAQsAAABCwAAAELAAABCwBAwAIAELAAAAQsAADm5v8NANeDecdF9INYAAAAAElFTkSuQmCC&#x27;;
+
+  giorgiomareLogo &#x3D; &#x27;data:image/png;base64,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&#x3D;&#x27;;
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'GlobalProvider.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

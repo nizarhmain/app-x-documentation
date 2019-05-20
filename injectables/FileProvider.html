@@ -1,0 +1,1154 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>My app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">My app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li>FileProvider</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/services/file-provider.ts</code>
+        </p>
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#db">db</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#file">file</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#fileTransfer">fileTransfer</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#global">global</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#platform">platform</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#tools">tools</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#downloadFile">downloadFile</a>
+                            </li>
+                            <li>
+                                <a href="#getDataDir">getDataDir</a>
+                            </li>
+                            <li>
+                                <a href="#getDir">getDir</a>
+                            </li>
+                            <li>
+                                <a href="#getImageBase64">getImageBase64</a>
+                            </li>
+                            <li>
+                                <a href="#getImagesDir">getImagesDir</a>
+                            </li>
+                            <li>
+                                <a href="#initialize">initialize</a>
+                            </li>
+                            <li>
+                                <a href="#listDir">listDir</a>
+                            </li>
+                            <li>
+                                <a href="#removeFile">removeFile</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(platform: Platform, file: File, fileTransfer: FileTransfer, global: <a href="../injectables/GlobalProvider.html">GlobalProvider</a>, tools: <a href="../injectables/ToolsProvider.html">ToolsProvider</a>, db: <a href="../injectables/DbProvider.html">DbProvider</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/services/file-provider.ts:22</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>platform</td>
+                                                  
+                                                        <td>
+                                                                    <code>Platform</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>file</td>
+                                                  
+                                                        <td>
+                                                                    <code>File</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>fileTransfer</td>
+                                                  
+                                                        <td>
+                                                                    <code>FileTransfer</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>global</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/GlobalProvider.html" target="_self" >GlobalProvider</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>tools</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ToolsProvider.html" target="_self" >ToolsProvider</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>db</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/DbProvider.html" target="_self" >DbProvider</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="downloadFile"></a>
+                    <span class="name">
+                        <b>
+                            downloadFile
+                        </b>
+                        <a href="#downloadFile"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>downloadFile(url: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, fileFullPath: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="105"
+                            class="link-to-prism">src/app/services/file-provider.ts:105</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>url</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>fileFullPath</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;any&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getDataDir"></a>
+                    <span class="name">
+                        <b>
+                            getDataDir
+                        </b>
+                        <a href="#getDataDir"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getDataDir()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="71"
+                            class="link-to-prism">src/app/services/file-provider.ts:71</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getDir"></a>
+                    <span class="name">
+                        <b>
+                            getDir
+                        </b>
+                        <a href="#getDir"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getDir(dir: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="52"
+                            class="link-to-prism">src/app/services/file-provider.ts:52</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>dir</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;string&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getImageBase64"></a>
+                    <span class="name">
+                        <b>
+                            getImageBase64
+                        </b>
+                        <a href="#getImageBase64"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getImageBase64(imgName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="41"
+                            class="link-to-prism">src/app/services/file-provider.ts:41</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>imgName</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;string&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getImagesDir"></a>
+                    <span class="name">
+                        <b>
+                            getImagesDir
+                        </b>
+                        <a href="#getImagesDir"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getImagesDir()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="48"
+                            class="link-to-prism">src/app/services/file-provider.ts:48</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;string&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initialize"></a>
+                    <span class="name">
+                        <b>
+                            initialize
+                        </b>
+                        <a href="#initialize"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initialize()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="37"
+                            class="link-to-prism">src/app/services/file-provider.ts:37</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listDir"></a>
+                    <span class="name">
+                        <b>
+                            listDir
+                        </b>
+                        <a href="#listDir"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>listDir(dir: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="76"
+                            class="link-to-prism">src/app/services/file-provider.ts:76</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>dir</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="removeFile"></a>
+                    <span class="name">
+                        <b>
+                            removeFile
+                        </b>
+                        <a href="#removeFile"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>removeFile(dir, name)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="83"
+                            class="link-to-prism">src/app/services/file-provider.ts:83</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>dir</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>name</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;any&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="db"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            db</b>
+                            <a href="#db"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../injectables/DbProvider.html" target="_self" >DbProvider</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/services/file-provider.ts:29</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="file"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            file</b>
+                            <a href="#file"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>File</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/services/file-provider.ts:25</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="fileTransfer"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            fileTransfer</b>
+                            <a href="#fileTransfer"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>FileTransfer</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/services/file-provider.ts:26</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="global"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            global</b>
+                            <a href="#global"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../injectables/GlobalProvider.html" target="_self" >GlobalProvider</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/services/file-provider.ts:27</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="platform"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            platform</b>
+                            <a href="#platform"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Platform</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/services/file-provider.ts:24</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="tools"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            tools</b>
+                            <a href="#tools"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../injectables/ToolsProvider.html" target="_self" >ToolsProvider</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/services/file-provider.ts:28</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
+//import &#x27;rxjs/add/operator/map&#x27;;
+
+import { LoadingController, Platform } from &#x27;@ionic/angular&#x27;;
+
+/*
+import { File, Entry } from &#x27;@ionic-native/file&#x27;;
+import { FileTransfer } from &#x27;@ionic-native/file-transfer&#x27;;
+*/
+
+import { FileTransfer, FileUploadOptions, FileTransferObject } from &#x27;@ionic-native/file-transfer/ngx&#x27;;
+import { File } from &#x27;@ionic-native/file/ngx&#x27;;
+
+import { GlobalProvider } from &#x27;./global-provider&#x27;;
+import { ToolsProvider } from &#x27;./tool-provider&#x27;;
+import { DbProvider } from &#x27;./db-provider&#x27;;
+
+import { Immagine } from &#x27;../../app/app.model&#x27;;
+declare var cordova: any;
+
+@Injectable()
+export class FileProvider {
+
+  constructor(public platform: Platform,
+              public file: File,
+              public fileTransfer: FileTransfer,
+              public global: GlobalProvider,
+              public tools: ToolsProvider,
+              public db: DbProvider) {
+    global.log(&#x27;FileProvider.constructor() - started&#x27;);
+    platform.ready().then((readySource) &#x3D;&gt; {
+      global.log(&#x27;FileProvider.constructor() - PlatformReady: &#x27; + readySource);
+      this.initialize();
+    });
+  }
+
+  initialize() {
+    this.global.log(&#x27;FileProvider.initialize() - started&#x27;);
+  }
+
+  getImageBase64(imgName: string): Promise&lt;string&gt; {
+    let dataDir: string &#x3D; cordova.file.dataDirectory;
+    let imgDir: string &#x3D; dataDir + &#x27;Images&#x27;;
+    this.global.log(&#x27;FileProvider.getImageBase64() - imgDir: &#x27; + imgDir + &#x27;, imgName: &#x27; + imgName);
+    return this.file.readAsDataURL(imgDir, imgName);
+  }
+
+  getImagesDir(): Promise&lt;string&gt; {
+    return this.getDir(&#x27;Images&#x27;);
+  }
+
+  getDir(dir: string): Promise&lt;string&gt; {
+    let dataDir: string &#x3D; cordova.file.dataDirectory;
+    this.global.log(&quot;FileProvider.getDir(&#x27;&quot; + dir + &quot;&#x27;) - started&quot;);
+    return this.file.createDir(dataDir, dir, false).then((dirEntry) &#x3D;&gt; {
+      this.global.log(&quot;FileProvider.getDir(&#x27;&quot; + dir + &quot;&#x27;) - Directory creata&quot;);
+      return Promise.resolve(dataDir + dir + &#x27;/&#x27;);
+    }).catch((err) &#x3D;&gt; {
+      this.global.error(&quot;FileProvider.getDir(&#x27;&quot; + dir + &quot;&#x27;) - CreateDirError: &quot; + err.message);
+      if(err.message &#x3D;&#x3D; &#x27;PATH_EXISTS_ERR&#x27;) {
+        return Promise.resolve(dataDir + dir + &#x27;/&#x27;);
+      }
+      else {
+        let myerr &#x3D; this.tools.parseError(err, 1, &#x27;Errore Directory&#x27;);
+        this.global.log(&#x27;FileProvider.getDir() - Error: &#x27; + myerr.message);
+        return Promise.reject(myerr);
+      }
+    });
+  }
+
+  getDataDir(): string {
+    return cordova.file.dataDirectory;
+  }
+
+  
+  listDir(dir: string): any {
+    let dataDir: string &#x3D; cordova.file.dataDirectory;
+    this.global.log(&#x27;FileProvider.listDir() - started&#x27;);
+    return this.file.listDir(dataDir, dir);
+  }
+  
+
+  removeFile(dir, name): Promise&lt;any&gt; {
+    let dataDir: string &#x3D; cordova.file.dataDirectory;
+    this.global.log(&#x27;FileProvider.removeFile() - started&#x27;);
+    return this.file.removeFile(dataDir, dir + name);
+  }
+
+  /*
+  deleteImages(): Promise&lt;any&gt; {
+    this.global.log(&#x27;FileProvider.deleteImages() - started&#x27;);
+    return this.listDir(&#x27;Images&#x27;).then(entries &#x3D;&gt; {
+      function rDelete(entries: Entry[]) {
+        let e &#x3D; entries.shift();
+        return this.file.removeFile(cordova.file.dataDirectory, &#x27;Images/&#x27; + e.name).then(() &#x3D;&gt; {
+          if(entries.length &gt; 0) return rDelete(entries);
+          else return Promise.resolve();
+        });
+      }
+      return rDelete(entries);
+    });
+  }
+  */
+
+  downloadFile(url: string, fileFullPath: string): Promise&lt;any&gt; {
+    let fileTransfer &#x3D; this.fileTransfer.create();
+    return fileTransfer.download(url, fileFullPath);
+  }
+
+  /*
+  downloadImmagini(baseurl: string, immagini: Immagine[]):Promise&lt;any&gt; {
+    //if(immagini.length &lt; 1) return Promise.reject(&#x27;Non ci sono metadati per le immagini nel database&#x27;);
+    let loader &#x3D; this.tools.getLoader(&#x27;Download Immagini...&#x27;);
+    loader.present();
+    return this.rDownload(loader, baseurl, immagini).then(resp &#x3D;&gt; {
+      this.global.log(&#x27;FileProvider.downloadImmagini() - rDownload completed&#x27;);
+      loader.dismiss();
+      return Promise.resolve(resp);
+    }).catch(err &#x3D;&gt; {
+      this.global.log(&#x27;FileProvider.downloadImmagini() - rDownload errore: &#x27; + JSON.stringify(err));
+      loader.dismiss();
+      return Promise.reject(err);
+    });
+  }
+  */
+
+  /*
+  private rDownload(loader: Loading, baseurl: string, items: Immagine[], tot: number &#x3D; items.length, attempt: number &#x3D; 0): Promise&lt;any&gt; {
+    this.global.log(&#x27;FileProvider.rDownload() - started&#x27;);
+    this.global.log(&#x27;FileProvider.rDownload() - baseurl: &#x27; + baseurl);
+    this.global.log(&#x27;FileProvider.rDownload() - items.lenght: &#x27; + items.length);
+    let item &#x3D; items.shift();
+    let content &#x3D; &#x27;Download immagine [&#x27; + (tot - items.length) + &#x27;/&#x27; + tot + &#x27;]: &#x27; + item.nomefile + &#x27; Attempt: &#x27; + (attempt + 1);
+    this.global.log(&#x27;FileProvider.rDownload() - content: &#x27; + content);
+    loader.setContent(content);
+    let fileTransfer &#x3D; this.fileTransfer.create();
+    let dataDir &#x3D; cordova.file.dataDirectory;
+    return fileTransfer.download(baseurl + &#x27;Aziende/&#x27; + this.global.getCodiceAzienda() + &#x27;/Images/&#x27; + item.nomefile, dataDir + &#x27;Images/&#x27; + item.nomefile).then(() &#x3D;&gt; {
+      this.global.log(&#x27;FileProvider.rDownload() - file scaricato: &#x27; + item.nomefile);
+      return this.getImageBase64(item.nomefile).then(img64 &#x3D;&gt; {
+        this.global.log(&#x27;FileProvider.rDownload() - base64 ricavato: &#x27; + item.nomefile);
+        return this.db.updateImmagine64(item, img64).then(() &#x3D;&gt; {
+          this.global.log(&#x27;FileProvider.rDownload() - base64 aggiornato: &#x27; + item.nomefile);
+          if(items.length &gt; 0) return this.rDownload(loader, baseurl, items, tot);
+          else return Promise.resolve();
+        });
+      });
+    }).catch(err &#x3D;&gt; {
+      this.global.log(&#x27;FileProvider.rDownload() - errore: &#x27; + JSON.stringify(err));
+      if(&#x27;code&#x27; in err) {
+        if(err.code &#x3D;&#x3D; 3) {
+          if(attempt &lt; 5) {
+            attempt++;
+            items &#x3D; [item].concat(items);
+            return this.rDownload(loader, baseurl, items, tot, attempt);
+          }
+        }
+        err &#x3D; {level: 1, message : &#x27;error[&#x27; + err.code + &#x27;]: &#x27; + err.exception}
+      }
+      return Promise.reject(err);
+    });
+  }
+  */
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'FileProvider.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

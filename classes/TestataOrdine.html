@@ -1,0 +1,1187 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>My app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">My app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content class">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Classes</li>
+  <li>TestataOrdine</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/app.model.ts</code>
+        </p>
+
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#cliente">cliente</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#codice_agente">codice_agente</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#comp_code">comp_code</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#dataConsegna">dataConsegna</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#dataOrdine">dataOrdine</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#destinatario">destinatario</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#eliminato">eliminato</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#id">id</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#inviato">inviato</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#lastupdate">lastupdate</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#note">note</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#numOrdine">numOrdine</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#totale">totale</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#totaleScontato">totaleScontato</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                                <span class="modifier">Public</span>
+                        <code>constructor(cliente: <a href="../classes/Cliente.html">Cliente</a>, destinatario: <a href="../classes/Destinatario.html">Destinatario</a>, numOrdine: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, dataOrdine: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, dataConsegna: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, totale: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, totalesco: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, inviato: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, note: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, lastupdate: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, eliminato: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, comp_code: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, codice_agente: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="301" class="link-to-prism">src/app/app.model.ts:301</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>cliente</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../classes/Cliente.html" target="_self" >Cliente</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>destinatario</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../classes/Destinatario.html" target="_self" >Destinatario</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>numOrdine</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dataOrdine</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dataConsegna</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>totale</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>totalesco</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>inviato</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>note</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>id</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>lastupdate</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>eliminato</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>comp_code</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>codice_agente</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="cliente"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            cliente</b>
+                            <a href="#cliente"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/Cliente.html" target="_self" >Cliente</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="289" class="link-to-prism">src/app/app.model.ts:289</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="codice_agente"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            codice_agente</b>
+                            <a href="#codice_agente"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="301" class="link-to-prism">src/app/app.model.ts:301</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="comp_code"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            comp_code</b>
+                            <a href="#comp_code"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="300" class="link-to-prism">src/app/app.model.ts:300</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="dataConsegna"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            dataConsegna</b>
+                            <a href="#dataConsegna"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="293" class="link-to-prism">src/app/app.model.ts:293</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="dataOrdine"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            dataOrdine</b>
+                            <a href="#dataOrdine"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="292" class="link-to-prism">src/app/app.model.ts:292</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="destinatario"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            destinatario</b>
+                            <a href="#destinatario"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/Destinatario.html" target="_self" >Destinatario</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="290" class="link-to-prism">src/app/app.model.ts:290</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="eliminato"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            eliminato</b>
+                            <a href="#eliminato"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="299" class="link-to-prism">src/app/app.model.ts:299</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="id"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            id</b>
+                            <a href="#id"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="288" class="link-to-prism">src/app/app.model.ts:288</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="inviato"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            inviato</b>
+                            <a href="#inviato"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="296" class="link-to-prism">src/app/app.model.ts:296</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="lastupdate"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            lastupdate</b>
+                            <a href="#lastupdate"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="298" class="link-to-prism">src/app/app.model.ts:298</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="note"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            note</b>
+                            <a href="#note"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="297" class="link-to-prism">src/app/app.model.ts:297</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="numOrdine"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            numOrdine</b>
+                            <a href="#numOrdine"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="291" class="link-to-prism">src/app/app.model.ts:291</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="totale"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            totale</b>
+                            <a href="#totale"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="294" class="link-to-prism">src/app/app.model.ts:294</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="totaleScontato"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            totaleScontato</b>
+                            <a href="#totaleScontato"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="295" class="link-to-prism">src/app/app.model.ts:295</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">export class Cliente{
+    public id: number;
+    public codice: string;
+    public ragionesociale: string;
+    public indirizzo: string;
+    public comune: string;
+    public telefono: string;
+    public email: string;
+    public banca: string;
+    public pagamento: string;
+    public sconto1: number;
+    public sconto2: number;
+    public sconto3: number;
+    public listino: string;
+    public saldo: number;
+    public lastupdate: string;
+    public eliminato: number;
+    public comp_code: string;
+    public codice_agente: string;
+
+    public constructor(codice: string, ragionesociale: string, indirizzo: string, comune: string, telefono: string, email: string,
+                       banca: string, pagamento: string, sconto1: any, sconto2: any, sconto3: any, listino: string, saldo: number,
+                       id: number &#x3D; 0, lastupdate: string &#x3D; &#x27;&#x27;, eliminato: any &#x3D; 0, comp_code: string &#x3D; &#x27;&#x27;, codice_agente: string &#x3D; &#x27;&#x27;) {
+        this.id &#x3D; id ? id: 0;
+        this.codice &#x3D; codice;
+        this.ragionesociale &#x3D; ragionesociale;
+        this.indirizzo &#x3D; indirizzo;
+        this.comune &#x3D; comune;
+        this.telefono &#x3D; telefono;
+        this.email &#x3D; email;
+        this.banca &#x3D; banca;
+        this.pagamento &#x3D; pagamento;
+        this.sconto1 &#x3D; this.parseSconto(sconto1);
+        this.sconto2 &#x3D; this.parseSconto(sconto2);
+        this.sconto3 &#x3D; this.parseSconto(sconto3);
+        this.listino &#x3D; listino;
+        this.saldo &#x3D; saldo;
+        this.lastupdate &#x3D; lastupdate ? lastupdate : &#x27;&#x27;;
+        this.eliminato &#x3D; eliminato ? 1 : 0;
+        this.comp_code &#x3D; comp_code ? comp_code : &#x27;&#x27;;
+        this.codice_agente &#x3D; codice_agente ? codice_agente : &#x27;&#x27;;
+    }
+
+    private parseSconto(sconto: any): number {
+        if(!sconto) {
+            return 0;
+        }
+        else {
+            if((typeof sconto) &#x3D;&#x3D; &quot;string&quot;) {
+                return parseFloat(sconto.replace(&quot;,&quot;, &quot;.&quot;));
+            }
+            else {
+                if((typeof sconto) &#x3D;&#x3D; &quot;number&quot;) {
+                    return sconto;
+                }
+                else {
+                    return 0;
+                }
+            }
+        }
+    }
+
+    getSconto1() {
+        return this.sconto1.toFixed(2);
+    }
+
+    getSconto2() {
+        return this.sconto2.toFixed(2);
+    }
+
+    getSconto3() {
+        return this.sconto3.toFixed(2);
+    }
+}
+
+export class Settings {
+    public codiceAgente: string;
+    public username: string;
+    public password: string;
+    public server: string;
+    public dbver: string;
+    public platform: string;
+    public appver: string;
+    public codiceAzienda: string
+
+    public constructor(codiceAgente: string, codiceAzienda: string, username: string, password: string, server: string, dbver: string, platform: string, appver: string) {
+        this.codiceAgente &#x3D; codiceAgente;
+        this.username &#x3D; username;
+        this.password &#x3D; password;
+        this.server &#x3D; server;
+        this.dbver &#x3D; dbver;
+        this.platform &#x3D; platform;
+        this.appver &#x3D; appver;
+        this.codiceAzienda &#x3D; codiceAzienda;
+    }
+}
+
+export class Destinatario {
+    public id: number;
+    public codice: string;
+    public codicecliente: string;
+    public ragionesociale: string;
+    public luogo: string;
+    public indirizzo: string;
+    public comune: string;
+    public note: string;
+    public lastupdate: string;
+    public eliminato: number;
+    public comp_code: string;
+    public codice_agente: string;
+
+    public constructor(codice: string, codicecliente: string, ragionesociale: string, luogo: string, indirizzo: string, comune: string, note: string,
+                       id: number &#x3D; 0, lastupdate: string &#x3D; &#x27;&#x27;, eliminato: number &#x3D; 0, comp_code: string &#x3D; &#x27;&#x27;, codice_agente: string &#x3D; &#x27;&#x27;) {
+        this.id &#x3D; id;
+        this.codice &#x3D; codice;
+        this.codicecliente &#x3D; codicecliente;
+        this.ragionesociale &#x3D; ragionesociale;
+        this.luogo &#x3D; luogo;
+        this.indirizzo &#x3D; indirizzo;
+        this.comune &#x3D; comune;
+        this.note &#x3D; note;
+        this.lastupdate &#x3D; lastupdate;
+        this.eliminato &#x3D; eliminato;
+        this.comp_code &#x3D; comp_code;
+        this.codice_agente &#x3D; codice_agente;
+    }
+}
+
+export class Articolo {
+    public id: number;
+    public Codice: string;
+    public Descrizione: string;
+    public Prezzo: number;
+    public PzConf: number;
+    public Giacenza: number;
+    public Barcode: string;
+    public Tipo1: number;
+    public Tipo2: number;
+    public Categoria: string;
+    public Preferito: boolean;
+    public lastupdate: string;
+    public eliminato: number;
+    public comp_code: string;
+    public codice_agente: string;
+    public sconto1: number;
+    public sconto2: number;
+    public sconto3: number;
+    public PrezzoPref: number &#x3D; 0;
+    public PesoPz: number;
+    public UltimaVendita: string &#x3D; &#x27;&#x27;;
+
+    public constructor(codice: string, descrizione: string, prezzo: number, pzconf: number, giacenza: number, barcode: string, tipo1: number, tipo2: number,
+                       categoria: string, preferito: boolean, pesopz: number, id: number &#x3D; 0, lastupdate: string &#x3D; &#x27;&#x27;, eliminato: number &#x3D; 0, comp_code: string &#x3D; &#x27;&#x27;,
+                       codice_agente: string &#x3D; &#x27;&#x27;, sconto1: number &#x3D; 0, sconto2: number &#x3D; 0, sconto3: number &#x3D; 0) {
+        this.id &#x3D; id;
+        this.Codice &#x3D; codice;
+        this.Descrizione &#x3D; descrizione;
+        this.Prezzo &#x3D; prezzo;
+        this.PzConf &#x3D; pzconf;
+        this.Giacenza &#x3D; giacenza;
+        this.Barcode &#x3D; barcode;
+        this.Tipo1 &#x3D; tipo1;
+        this.Tipo2 &#x3D; tipo2;
+        this.Categoria &#x3D; categoria;
+        this.Preferito &#x3D; preferito;
+        this.PesoPz &#x3D; pesopz;
+        this.lastupdate &#x3D; lastupdate;
+        this.eliminato &#x3D; eliminato;
+        this.comp_code &#x3D; comp_code;
+        this.codice_agente &#x3D; codice_agente;
+        this.sconto1 &#x3D; sconto1;
+        this.sconto2 &#x3D; sconto2;
+        this.sconto3 &#x3D; sconto3;
+    }
+}
+
+export class Preferito {
+  public id: number;
+  public codice: string;
+  public descrizione: string;
+  public prezzo: number;
+  public pezziconf: number;
+  public giacenza: number;
+  public barcode: string;
+  public tipo1: number;
+  public tipo2: number;
+  public marca: string;
+  public codicecliente: string;
+  public sconto1: number;
+  public sconto2: number;
+  public sconto3: number;
+  public offerta: number;
+  public pesopz: number;
+  public ultimavendita: string;
+  public lastupdate: string;
+  public eliminato: number;
+  public comp_code: string;
+  public codice_agente: string;
+
+  public constructor(codice: string, descrizione: string, prezzo: number, pezziconf: number, giacenza: number, barcode: string, tipo1: number, tipo2: number,
+                     marca: string, codicecliente: string, sconto1: number, sconto2: number, sconto3: number, offerta: number, pesopz: number, ultimavendita: string,
+                     id: number &#x3D; 0, lastupdate: string &#x3D; &#x27;&#x27;, eliminato: number &#x3D; 0, comp_code: string &#x3D; &#x27;&#x27;, codice_agente: string &#x3D; &#x27;&#x27;) {
+      this.id &#x3D; id;
+      this.codice &#x3D; codice;
+      this.descrizione &#x3D; descrizione;
+      this.prezzo &#x3D; prezzo;
+      this.pezziconf &#x3D; pezziconf;
+      this.giacenza &#x3D; giacenza;
+      this.barcode &#x3D; barcode;
+      this.tipo1 &#x3D; tipo1;
+      this.tipo2 &#x3D; tipo2;
+      this.marca &#x3D; marca;
+      this.codicecliente &#x3D; codicecliente;
+      this.sconto1 &#x3D; sconto1;
+      this.sconto2 &#x3D; sconto2;
+      this.sconto3 &#x3D; sconto3;
+      this.offerta &#x3D; offerta;
+      this.pesopz &#x3D; pesopz;
+      this.ultimavendita &#x3D; ultimavendita;
+      this.lastupdate &#x3D; lastupdate;
+      this.eliminato &#x3D; eliminato;
+      this.comp_code &#x3D; comp_code;
+      this.codice_agente &#x3D; codice_agente;
+  }
+}
+
+export class Immagine {
+    public id: number;
+    public server: string;
+    public codice: string;
+    public nomefile: string;
+    public nome: string;
+    public image64: string;
+    public lastupdate: string;
+    public eliminato: number;
+    public comp_code: string;
+    public codice_agente: string;
+
+    public constructor(server: string, codice: string, nomefile: string, nome: string, image64: string, id: number &#x3D; 0, lastupdate: string &#x3D; &#x27;&#x27;, eliminato: number &#x3D; 0,
+                       comp_code: string &#x3D; &#x27;&#x27;, codice_agente: string &#x3D; &#x27;&#x27;) {
+        this.id &#x3D; id;
+        this.server &#x3D; server;
+        this.codice &#x3D; codice;
+        this.nomefile &#x3D; nomefile;
+        this.nome &#x3D; nome;
+        this.image64 &#x3D; image64;
+        this.lastupdate &#x3D; lastupdate;
+        this.eliminato &#x3D; eliminato;
+        this.comp_code &#x3D; comp_code;
+        this.codice_agente &#x3D; codice_agente;
+    }
+}
+
+export class Marca {
+    public id: number;
+    public ID_cat: number;
+    public Position: number;
+    public Codice: string;
+    public Name: string;
+    public Description: string;
+    public IsActive: boolean;
+    public DateCreated: string;
+    public ParentID: number;
+    public lastupdate: string;
+    public eliminato: number;
+    public comp_code: string;
+    public codice_agente: string;
+
+    public constructor(id_cat: number, position: number, codice: string, name: string, description: string, isActive: boolean, dateCreated: string, parentID: number,
+                       id: number &#x3D; 0, lastupdate: string &#x3D; &#x27;&#x27;, eliminato: number &#x3D; 0, comp_code: string &#x3D; &#x27;&#x27;, codice_agente: string &#x3D; &#x27;&#x27;) {
+        this.id &#x3D; id;
+        this.ID_cat &#x3D; id_cat;
+        this.Codice &#x3D; codice;
+        this.Position &#x3D; position;
+        this.Name &#x3D; name;
+        this.Description &#x3D; description;
+        this.IsActive &#x3D; isActive;
+        this.DateCreated &#x3D; dateCreated;
+        this.ParentID &#x3D; parentID;
+        this.lastupdate &#x3D; lastupdate;
+        this.eliminato &#x3D; eliminato;
+        this.comp_code &#x3D; comp_code;
+        this.codice_agente &#x3D; codice_agente;
+    }
+}
+
+export class TestataOrdine {
+    public id: number;
+    public cliente: Cliente;
+    public destinatario: Destinatario;
+    public numOrdine: number;
+    public dataOrdine: string;
+    public dataConsegna: string;
+    public totale: number;
+    public totaleScontato: number;
+    public inviato: number;
+    public note: string;
+    public lastupdate: string;
+    public eliminato: number;
+    public comp_code: string;
+    public codice_agente: string;
+
+    public constructor(cliente: Cliente, destinatario: Destinatario, numOrdine: number, dataOrdine: string, dataConsegna: string, totale: number, totalesco: number, inviato: number, note: string,
+                       id: number &#x3D; 0, lastupdate: string &#x3D; &#x27;&#x27;, eliminato: number &#x3D; 0, comp_code: string &#x3D; &#x27;&#x27;, codice_agente: string &#x3D; &#x27;&#x27;) {
+        this.id &#x3D; id;
+        this.cliente &#x3D; cliente;
+        this.destinatario &#x3D; destinatario;
+        this.numOrdine &#x3D; numOrdine;
+        this.dataOrdine &#x3D; dataOrdine;
+        this.dataConsegna &#x3D; dataConsegna;
+        this.totale &#x3D; totale;
+        this.totaleScontato &#x3D; totalesco;
+        this.inviato &#x3D; inviato;
+        this.note &#x3D; note;
+        this.lastupdate &#x3D; lastupdate;
+        this.eliminato &#x3D; eliminato;
+        this.comp_code &#x3D; comp_code;
+        this.codice_agente &#x3D; codice_agente;
+    }
+}
+
+export class RigaOrdine {
+    public id: number;
+    public articolo: Articolo;
+    public numOrdine: number;
+    public numRiga: number;
+    public codicecliente: string;
+    public prezzo: number;
+    public quantita: number;
+    public listino: string;
+    public note: string;
+    public lastupdate: string;
+    public eliminato: number;
+    public comp_code: string;
+    public codice_agente: string;
+
+    public constructor(articolo: Articolo, numOrdine: number, numRiga: number, codicecliente: string, prezzo: number, quantita: number, listino: string, note: string,
+                       id: number &#x3D; 0, lastupdate: string &#x3D; &#x27;&#x27;, eliminato: number &#x3D; 0, comp_code: string &#x3D; &#x27;&#x27;, codice_agente: string &#x3D; &#x27;&#x27;) {
+        this.id &#x3D; id;
+        this.articolo &#x3D; articolo;
+        this.numOrdine &#x3D; numOrdine;
+        this.numRiga &#x3D; numRiga;
+        this.codicecliente &#x3D; codicecliente;
+        this.prezzo &#x3D; prezzo;
+        this.quantita &#x3D; quantita;
+        this.listino &#x3D; listino;
+        this.note &#x3D; note;
+        this.lastupdate &#x3D; lastupdate;
+        this.eliminato &#x3D; eliminato;
+        this.comp_code &#x3D; comp_code;
+        this.codice_agente &#x3D; codice_agente;
+    }
+}
+
+export class Ordine {
+    public testata: TestataOrdine &#x3D; null;
+    public righe: Array&lt;RigaOrdine&gt; &#x3D; [];
+
+    public constructor(testata: TestataOrdine &#x3D; null, righe: RigaOrdine[] &#x3D; []) {
+        this.testata &#x3D; testata;
+        this.righe &#x3D; righe;
+    }
+}
+</code></pre>
+    </div>
+</div>
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'class';
+            var COMPODOC_CURRENT_PAGE_URL = 'TestataOrdine.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
